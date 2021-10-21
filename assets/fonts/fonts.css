@@ -1,0 +1,10 @@
+/** Import fonts **/
+
+@font-face {
+	font-family: "Tungsten Light";
+	src: url(Tungsten-Light.otf) format("opentype")
+}
+@font-face {
+	font-family: "Tungsten Medium";
+	src: url(Tungsten-Medium.otf) format("opentype")
+}

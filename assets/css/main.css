@@ -1,5 +1,8 @@
 /** Main styles **/
 
+/* CSS Imports */
+@import url(../fonts/fonts.css);
+
 /* Variables */
 :root {
 	--primary: #a4bd01; /* Lightgreen */
@@ -7,12 +10,6 @@
 	--secondary-variant: #06668c /* Blue */
 }
 
-body {background-color: var(--secondary-variant)}
-
-.btn-large {}
-
-.btn-more {}
-
-.btn-important {}
-
-.btn {}
+body {
+	background-color: var(--secondary-variant)
+}
