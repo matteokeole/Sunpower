@@ -1,0 +1,78 @@
+/** Header and navbar **/
+
+/* Header */
+header {
+	padding: 0 10px;
+	top: 0;
+	position: sticky;
+	background-color: var(--primary);
+	user-select: none
+}
+
+/* Navbar */
+nav {justify-content: flex-end}
+
+/* Navbar brand */
+.navbar-brand {
+	padding: 0 10px;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #fff !important;
+}
+
+/* Navbar links */
+
+.nav-link:not(.btn-contact) {
+	padding: 0;
+	position: relative;
+	color: #fff !important; /* Override Bootstrap default link color with !important */
+	transition: 0.2s
+}
+/* Active link */
+.nav-link.active::before {
+	width: 100% !important;
+	left: 0 !important;
+}
+
+/* Contact button */
+.btn-contact {
+	border-radius: 50px;
+	background-color: var(--secondary);
+	color: #fff !important /* Override Bootstrap default link color with !important */
+}
+
+/* Media queries */
+
+/* 991px max media query */
+@media screen and (max-width: 991px) {
+	/* Small screen, minimized header with drop-down menu */
+	.nav-link {
+		margin-right: 0;
+		padding: 5px 0 !important
+	}
+	.nav-link:hover {opacity: 0.65}
+	.btn-contact {display: none} /* No contact button in the drop-down menu */
+}
+
+/* 992px min media query */
+@media screen and (min-width: 992px) {
+	/* Large screen, full header without drop-down menu */
+	.nav-link:not(.btn-contact) {
+		margin-right: 30px;
+	}
+	.nav-link:not(.btn-contact)::before {
+		content: "";
+		width: 0;
+		height: 2px;
+		bottom: -2px;
+		left: 50%;
+		position: absolute;
+		background-color: #fff;
+		transition-duration: 0.4s
+	}
+	.nav-link:active, .nav-link:active::before {opacity: 0.65}
+	.nav-link:hover::before {
+		width: 100%;
+		left: 0
+	}
+}

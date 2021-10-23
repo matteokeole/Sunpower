@@ -1,5 +1,9 @@
 /** Import fonts **/
 
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* Tungsten */
 @font-face {
 	font-family: "Tungsten Light";
 	src: url(Tungsten-Light.otf) format("opentype")

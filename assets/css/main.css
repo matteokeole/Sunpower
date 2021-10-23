@@ -2,6 +2,8 @@
 
 /* CSS Imports */
 @import url(../fonts/fonts.css);
+@import url(header.css);
+@import url(footer.css);
 
 /* Variables */
 :root {
@@ -10,6 +12,10 @@
 	--secondary-variant: #06668c /* Blue */
 }
 
+::selection {background-color: rgba(0, 0, 0, 0.1)}
+::-moz-selection {background-color: rgba(0, 0, 0, 0.1)}
+
 body {
-	background-color: var(--secondary-variant)
+	margin: 0;
+	font-family: Poppins
 }
