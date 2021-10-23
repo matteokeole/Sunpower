@@ -17,13 +17,12 @@ nav {justify-content: flex-end}
 	padding: 0 10px;
 	border-radius: 50px;
 	background-color: rgba(0, 0, 0, 0.1);
-	color: #fff !important;
+	color: #fff !important
 }
 
 /* Navbar links */
 
-.nav-link:not(.btn-contact) {
-	padding: 0;
+.nav-link:not(.contact-link) {
 	position: relative;
 	color: #fff !important; /* Override Bootstrap default link color with !important */
 	transition: 0.2s
@@ -31,36 +30,69 @@ nav {justify-content: flex-end}
 /* Active link */
 .nav-link.active::before {
 	width: 100% !important;
-	left: 0 !important;
+	left: 0 !important
 }
 
 /* Contact button */
-.btn-contact {
+.contact-link {
 	border-radius: 50px;
 	background-color: var(--secondary);
 	color: #fff !important /* Override Bootstrap default link color with !important */
+}
+
+/* Contact button variant for small screens */
+.contact-link-rounded {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	right: 0;
+	bottom: 0;
+	position: fixed;
+	border-radius: 50%;
+	background-color: var(--secondary);
+	color: #fff !important; /* Override Bootstrap default link color with !important */
+	font-size: 25px
+}
+
+/* Dropdown menu button */
+.navbar-toggler {
+	display: flex;
+	padding: 0;
+	border-radius: 0;
+	color: #fff;
+	font-size: 30px
+}
+.navbar-toggler:focus {
+	box-shadow: none !important /* Remove Bootstrap default focus */
 }
 
 /* Media queries */
 
 /* 991px max media query */
 @media screen and (max-width: 991px) {
-	/* Small screen, minimized header with drop-down menu */
+	/* Small screen, minimized header with dropdown menu */
 	.nav-link {
 		margin-right: 0;
-		padding: 5px 0 !important
+		padding: 5px 0;
+		text-align: center
 	}
+	.nav-link:first-child {margin-top: 10px} /* Space between the logo and the first dropdown menu link */
 	.nav-link:hover {opacity: 0.65}
-	.btn-contact {display: none} /* No contact button in the drop-down menu */
+	.contact-link {display: none} /* No contact button in the dropdown menu */
+	.contact-link-rounded {display: flex} /* The contact button is at the bottom right angle of the screen */
 }
 
 /* 992px min media query */
 @media screen and (min-width: 992px) {
-	/* Large screen, full header without drop-down menu */
-	.nav-link:not(.btn-contact) {
+	/* Large screen, full header without dropdown menu */
+	.nav-link:not(.contact-link) {
 		margin-right: 30px;
+		padding: 0
 	}
-	.nav-link:not(.btn-contact)::before {
+	.nav-link:not(.contact-link)::before {
 		content: "";
 		width: 0;
 		height: 2px;
