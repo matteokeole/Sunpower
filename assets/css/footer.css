@@ -1,0 +1,25 @@
+footer {
+	background-color: var(--secondary);
+	color: #fff !important
+}
+
+/* Footer container */
+.footer-container {
+	min-height: 300px
+}
+
+footer .col {
+	height: 300px;
+}
+footer .col:not(:last-child) {
+	border-right: 2px solid;
+	border-right-color: var(--secondary-variant)
+}
+
+/* Copyright section */
+.copyright-container {
+	display: flex;
+	align-items: center;
+	height: 80px;
+	background-color: var(--secondary-variant)
+}

@@ -52,9 +52,13 @@ nav {justify-content: flex-end}
 	bottom: 0;
 	position: fixed;
 	border-radius: 50%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	background-color: var(--secondary);
 	color: #fff !important; /* Override Bootstrap default color */
 	font-size: 25px
+}
+.contact-link-rounded:hover {
+	transform: scale(1.2);
 }
 
 /* Dropdown menu button */
