@@ -1,5 +1,5 @@
 <!--
-	Sunpower, solar panel maker
+	Sunpower, solar panel maker located in France
 	GitHub repository: https://github.com/matteoo34/Sunpower
 	Made by Clothilde Pautis, Thomas Quinton and Mattéo Legagneux
 	Copyright (C) 2021
@@ -12,8 +12,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Sunpower, solar panel maker">
-		<meta name="keywords" content="sun, power, solar, panel">
+		<meta name="description" content="Sunpower, solar panel maker located in France">
+		<meta name="keywords" content="sunpower, sun, power, solar, panel, shade, car">
 		<meta name="author" content="Clothilde Pautis, Thomas Quinton, Mattéo Legagneux">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- Bootstrap -->
@@ -45,7 +45,7 @@
 			</button>
 			<nav id="dropdown" class="navbar-collapse collapse">
 				<a href="index.html" class="nav-link active">Accueil</a>
-				<a href="#presentation" class="nav-link presentation">Présentation</a>
+				<a href="#presentation-anchor" class="nav-link presentation">Présentation</a>
 				<a href="ombrieres.html" class="nav-link">Ombrières solaires</a>
 				<a href="retd.html" class="nav-link">Recherche et développement</a>
 				<a href="contact.html" class="nav-link contact-link">Contact</a>
@@ -55,14 +55,23 @@
 			<ion-icon name="chatbubbles"></ion-icon>
 		</a>
 		<!-- Banner -->
-		<!-- <div class="banner container-fluid"></div> -->
+		<div class="banner container-fluid" style="height: calc(100vh - 56px * 2)">
+			<i>Bannière ici</i>
+		</div>
 		<!-- Content -->
-		<!-- <main class="container"></main> -->
+		<main class="container">
+			<!-- Presentation -->
+			<div id="presentation-anchor" class="anchor"></div>
+			<div class="presentation-section">
+				<i>Présentation ici</i>
+			</div>
+		</main>
 		<!-- Footer -->
 		<!-- <footer class="container-fluid"></footer> -->
 
 		<!-- Scripts -->
 		<script>
+			// Test /!\
 			const navLinks = document.querySelectorAll(".nav-link"),
 			home = navLinks[0],
 			presentation = navLinks[1];

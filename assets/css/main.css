@@ -1,6 +1,6 @@
 /** Main styles **/
 
-/* CSS Imports */
+/* CSS imports */
 @import url(../fonts/fonts.css);
 @import url(header.css);
 @import url(footer.css);
@@ -12,10 +12,21 @@
 	--secondary-variant: #06668c /* Blue */
 }
 
+/* Text selection color */
 ::selection {background-color: rgba(0, 0, 0, 0.1)}
 ::-moz-selection {background-color: rgba(0, 0, 0, 0.1)}
 
 body {
 	margin: 0;
 	font-family: Poppins
+}
+
+.anchor {
+	height: 56px;
+	margin-bottom: 10px
+}
+
+.presentation-section {
+	height: 100vh;
+	background-color: orange;
 }
