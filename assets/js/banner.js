@@ -1,5 +1,6 @@
 const header = document.querySelector("header");
 let windowHeight = window.innerHeight;
+header.style.backgroundColor = "transparent";
 window.addEventListener("resize", function() {windowHeight = this.innerHeight});
 window.addEventListener("scroll", function() {
 	let scrollAmount = this.scrollY / windowHeight;
