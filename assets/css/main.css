@@ -10,7 +10,8 @@
 :root {
 	--primary: #a4bd01; /* Lightgreen */
 	--secondary: #427aa1; /* Lightblue */
-	--secondary-variant: #06668c /* Blue */
+	--secondary-variant: #06668c; /* Blue */
+	--tertiary: #ff8800 /* Orange */
 }
 
 /* Text selection color */
@@ -62,3 +63,12 @@ body {
 	background-color: var(--primary);
 	z-index: -1
 }
+
+/* Paragraphs links */
+p a {
+	color: var(--tertiary) !important;
+	font-weight: 700;
+	text-decoration: none;
+	transition-duration: 0.2s
+}
+p a:hover {opacity: 0.75}
