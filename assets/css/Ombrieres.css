@@ -1,0 +1,45 @@
+/* Titre secondaire */
+div.boxtitre{
+    margin-top: 60px;
+}
+
+/* rangés */
+div.rang{
+    margin-top: 220px;
+}
+
+/* images */
+
+div.boxim1{
+    align-items: flex-end;
+}
+
+/* image panneaux */
+div #im1{
+    background-image: url(image/test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60vh;
+    height: 40vh;
+}
+
+/* déscriptif panneaux */
+div #im2{
+    width: 40vh;
+    height: 44vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* sous titres */
+h3{
+    padding: 0 !important;
+    text-decoration: underline 0.1em #A4BD01;
+}
+
+/* descriptions */
+p{
+    text-align: center;
+    margin-top: 30%;
+}
+
