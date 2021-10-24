@@ -1,0 +1,104 @@
+/* Titre secondaire */
+div.boxtitre{
+    margin-top: 90px;
+}
+
+/* rangés */
+div.rang{
+    margin-top: 190px;
+}
+
+/* séparateurs */
+.sepa{
+    border-left: solid #A4BD01;
+    border-width: 3px;
+    border-radius: 30%;
+}
+
+/* images */
+
+div.boxim1{
+    align-items: flex-end;
+}
+
+/* image panneaux */
+div #im1{
+    border-radius: 10px;
+    background-image: url(../image/test.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 60vh;
+    height: 35vh;
+    margin-bottom: 30px;
+    order: 0;
+}
+
+/* déscriptif panneaux/ombriere/borne */
+div #im2{
+    width: 40vh;
+    height: 44vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* image ombriere */
+div #im3{
+    border-radius: 10px;
+    background-image: url(../image/test2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 60vh;
+    height: 35vh;
+    margin-bottom: 30px;
+    order: 0;
+}
+
+
+/* image borne */
+div #im4{
+    border-radius: 10px;
+    background-image: url(../image/test3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 60vh;
+    height: 35vh;
+    margin-bottom: 30px;
+    order: 0;
+}
+
+
+/* sous titres */
+h3{
+    padding: 0 !important;
+}
+
+/* resume container */
+.resume{
+    margin-top: 220px;
+}
+
+/* descriptions 1/2/4 elem*/
+p.elem{
+    margin-top:50px;
+}
+
+/* descriptions */
+p{
+    text-align: center;
+}
+
+/* Parallax on the last image */
+.parallax {
+    width: 100%;
+    height: 40vh;
+    margin-top: 50px;
+    background: url(../image/test4.jpg) center fixed no-repeat;
+    background-size: cover
+}
+
+/* ordre des texte/images en mobile */
+@media screen and (max-width :769px){
+    .change {
+        order: -1 !important;
+    }
+}
