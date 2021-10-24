@@ -16,9 +16,9 @@ div.boxim1{
 
 /* image panneaux */
 div #im1{
-    background-image: url(assets/image/test.jpg);
+    background-image: url(../image/test.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     width: 60vh;
     height: 40vh;
 }
@@ -37,9 +37,14 @@ h3{
     text-decoration: underline 0.1em #A4BD01;
 }
 
-/* descriptions */
-p{
+/* descriptions des 3 elem*/
+p.elem{
     text-align: center;
     margin-top: 30%;
 }
 
+/* description globale */
+p{
+    text-align: center;
+    margin-top:50px;
+}
