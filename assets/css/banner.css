@@ -2,10 +2,19 @@
 
 .banner {
 	height: 100vh;
-	background: linear-gradient(70deg, #fff 45%, var(--primary) 45%)
+	background: linear-gradient(70deg, #fff 50%, var(--primary) 0)
 }
 
 .banner-content {
+	width: 50%;
+}
+
+.banner-image {
+	width: 75%;
+	background: url(../images/banner.png) center 100% no-repeat;
+}
+
+.banner-title {
 	line-height: 100px;
 	margin-left: 20px;
 	padding-top: 56px;
@@ -14,11 +23,11 @@
 	font-family: "Tungsten Medium";
 	font-size: 100px
 }
-.banner-content::before {
+.banner-title::before {
 	content: "";
 	width: 5px;
 	height: 100%;
 	margin-left: -20px;
 	position: absolute;
-	background-color: var(--primary);
+	background-color: var(--primary)
 }
