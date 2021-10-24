@@ -75,7 +75,7 @@ p{
 }
 
 /* ordre des texte/images en mobile */
-@media screen and (max-width :576px){
+@media screen and (max-width :769px){
     .change {
         order: -1 !important;
     }
