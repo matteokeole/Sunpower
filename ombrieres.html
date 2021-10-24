@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html lang='fr'>
+
+<html prefix="og: http://ogp.me/ns#" lang='fr'>
+
     <head>
-        <meta charset='utf-8'>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU' crossorigin='anonymous'>
-        <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ' crossorigin='anonymous'></script>
-        <link rel='stylesheet' href='assets/css/Ombrieres.css'>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Sunpower, solar panel maker located in France">
+		<meta name="keywords" content="sunpower, sun, power, solar, panel, shade, car">
+		<meta name="author" content="Clothilde Pautis, Thomas Quinton, Mattéo Legagneux">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!-- Leaflet 1.7.1 -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<!-- Ionicons -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+		<!-- <link rel="apple-touch-icon" type="image/x-icon" href="favicon.ico"> -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel='stylesheet' href='assets/css/ombrieres.css'>
         <title>Ombrières Solaires</title>
     </head>
 
-    <header>
-
-    </header>
+    <!-- Header -->
+	<header class="navbar navbar-expand-lg">
+			<a href="index.html" class="navbar-brand">Logo</a>
+			<button class="navbar-toggler"
+			data-bs-toggle="collapse"
+			data-bs-target="#dropdown"
+			aria-controls="dropdown"
+			aria-expanded="false" 
+			aria-label="Ouvrir/fermer le menu">
+			    <ion-icon name="menu-outline"></ion-icon>
+			</button>
+			<nav id="dropdown" class="navbar-collapse collapse">
+				<a href="index.html" class="nav-link active">Accueil</a>
+				<a href="#presentation-anchor" class="nav-link presentation">Présentation</a>
+				<a href="ombrieres.html" class="nav-link">Ombrières solaires</a>
+				<a href="rechercheEtDev.html" class="nav-link">Recherche et développement</a>
+				<a href="contact.html" class="nav-link contact-link">Contact</a>
+			</nav>
+	</header>
 
     <body>
         
@@ -182,5 +214,102 @@
         </main>
         
     </body>
+
+    <!-- Footer -->
+	<footer class="container-fluid">
+
+		<div class="footer-container row">
+
+			<div class="col col-12 col-sm-6 col-xl-3 d-flex">
+
+				<div class="footer-logo"></div>
+
+				<div class="col-content">
+
+					<h6 class="footer-subtitle subtitle-brand">Sunpower</h6>
+						2 rue de l'Innovation<br>
+						38000 Grenoble
+				</div>
+
+			</div>
+
+			<div class="col col-12 col-sm-6 col-xl-3">
+
+				<h6 class="footer-subtitle">NOUS SUIVRE</h6>
+
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="logo-facebook"></ion-icon>
+						Facebook
+				</a>
+
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="logo-twitter"></ion-icon>
+						Twitter
+				</a>
+
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="logo-instagram"></ion-icon>
+						Instagram
+				</a>
+
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="logo-linkedin"></ion-icon>
+						LinkedIn
+				</a>
+
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="logo-youtube"></ion-icon>
+						YouTube
+				</a>
+
+				<a href="https://github.com/matteoo34/Sunpower" class="footer-link d-flex align-items-center">
+					<ion-icon name="logo-github"></ion-icon>
+						GitHub
+				</a>
+
+			</div>
+
+			<div class="col col-12 col-sm-6 col-xl-3">
+
+				<h6 class="footer-subtitle">PLAN DU SITE</h6>
+				<a href="index.html" class="footer-link d-flex align-items-center">Accueil</a>
+				<a href="#presentation-anchor" class="footer-link d-flex align-items-center">Présentation</a>
+				<a href="ombrieres.html" class="footer-link d-flex align-items-center">Ombrières solaires</a>
+				<a href="retd.html" class="footer-link d-flex align-items-center">Recherche et développement</a>
+
+			</div>
+
+			<div class="col col-12 col-sm-6 col-xl-3">
+
+				<h6 class="footer-subtitle">NOUS CONTACTER</h6>
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="call"></ion-icon>
+						04 76 00 00 00
+				</a>
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="mail"></ion-icon>
+						contact@sunpower.com
+				</a>
+				<h6 class="footer-subtitle subtitle-join-us">NOUS REJOINDRE</h6>
+				<a href="#" class="footer-link d-flex align-items-center">
+					<ion-icon name="mail"></ion-icon>
+						recrutement@sunpower.com
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="copyright-container row">
+
+			<div class="legal-notices col-12 col-md-6 text-center">
+				<a href="#" class="footer-link">Mentions légales</a>
+			</div>
+
+			<div class="copyright col-12 col-md-6 text-center">Copyright &copy; 2021 Sunpower. Tous droits réservés.</div>
+
+		</div>
+
+	</footer>
 
 </html>
