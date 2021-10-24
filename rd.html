@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Sunpower, solar panel maker located in France">
+        <meta name="keywords" content="sunpower, sun, power, solar, panel, shade, car">
+        <meta name="author" content="Clothilde Pautis, Thomas Quinton, Mattéo Legagneux">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!-- Leaflet 1.7.1 -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <!-- Ionicons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+        <!-- <link rel="apple-touch-icon" type="image/x-icon" href="favicon.ico"> -->
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <!-- <link rel="stylesheet" href="assets/css/rechercheEtDev.css"> -->
+        <link rel="stylesheet" href="assets/css/Ombrieres.css">
+        <title>Recherche & développement | Sunpower</title>
+    </head>
+
+    <body>
+            <!-- Header -->
+            <header class="navbar navbar-expand-lg">
+                <a href="index.html" class="navbar-brand">Logo</a>
+                <button class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#dropdown"
+                aria-controls="dropdown"
+                aria-expanded="false" 
+                aria-label="Ouvrir/fermer le menu">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <nav id="dropdown" class="navbar-collapse collapse">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="#presentation-anchor" class="nav-link presentation">Présentation</a>
+                    <a href="ombrieres.html" class="nav-link">Ombrières solaires</a>
+                    <a href="rechercheEtDev.html" class="nav-link active">Recherche et développement</a>
+                    <a href="contact.html" class="nav-link contact-link">Contact</a>
+                </nav>
+            </header>
+
+        <main> 
+            <section class="container-fluid">
+                <div class="row">
+
+                    <!-- Titre Secondaire -->
+                    <div class="col-12 d-flex align-item-center justify-content-center boxtitre">
+                        <h2>Recherche & Développement</h2>
+                    </div>
+                    
+                    <!-- Présentation -->
+                    <div class="col-12 d-flex align-item-center justify-content-center boxtitre">
+                        <p>La recherche et le développement constitue l’ADN de Sunpower.
+                            <br>Nos produits sont en constante amélioration.
+                            <br>En outre, nous participons à différents projets européens qui demeurent confidentiels à ce jour. 
+                            <br>Un de nos projets phare, que nous menons conjointement avec le CEA et le groupe PSA, est un système de recharge par induction à haute puissance sur des distances de plus de 1 mètre.
+                        </p>
+                    </div> 
+                </div>
+            </section>
+
+            <!-- 1ère sous-partie : Nos principaux travaux -->
+            <section class="principauxTravaux">
+                <h3>Nos principaux travaux</h3>
+                <!-- L'élecronique de puissance -->
+                <div class="container-fluid">
+                    <div class="main-container row">
+                        <div class="col col-12 col-sm-5 col-md-5 column1"><img src="assets/image/electroniquePuissance.jpeg" alt="L'électronique de puissance"></div>
+                        <!-- séparateur -->
+                        <div class="col-sm-12 col-md-2 d-flex align-item-center justify-content-center">
+                            <div class="sepa"></div>
+                        </div>
+                        <div class="col col-12 col-sm-5 col-md-5">
+                            <h3>L'électronique de puissance</h3>
+                            <p>L’électronique de puissance, autrement dit " électronique de conversion d’énergie " a moins de 50 ans.
+                                <br>Elle a connu un tel essor qu’aujourd’hui près de 15 % de l’énergie électrique produite est convertie sous une forme ou une autre.
+                                <br>Au cours de ces années la taille, le poids et le coût des convertisseurs n’ont fait que diminuer, en grande partie grâce aux progrès fait dans le domaine des interrupteurs électroniques.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- L'élecronique ermbarquée -->
+                <div class="container-fluid">
+                    <div class="main-container row">
+                        <div class="col col-12 col-sm-5 col-md-5">
+                            <h3>L'électronique embarquée</h3>
+                            <p>Un système embarqué est défini comme un système électronique et informatique autonome, souvent temps réel, spécialisé dans une tâche précise.
+                                <br>Le terme désigne aussi bien le matériel informatique que le logiciel utilisé.
+                                <br>Ses ressources sont généralement limitées spatialement (encombrement réduit) et énergétiquement(consommation restreinte).
+                            </p>
+                        </div>
+                        <!-- séparateur -->
+                        <div class="col-sm-12 col-md-2 d-flex align-item-center justify-content-center">
+                            <div class="sepa"></div>
+                        </div>
+                        <div class="col col-12 col-sm-5 col-md-5"><img src="assets/image/electroniqueEmbarquee.jpeg" alt="L'électronique embarquée"></div>
+                    </div>
+                </div>
+
+                <!-- Le développement des BMS -->
+                <div class="container-fluid">
+                    <div class="main-container row">
+                        <div class="col col-12 col-sm-5 col-md-5 column1"><img src="assets/image/BMS.jpeg" alt="Le développement des BMS"></div>
+                        <!-- séparateur -->
+                        <div class="col-sm-12 col-md-2 d-flex align-item-center justify-content-center">
+                            <div class="sepa"></div>
+                        </div>
+                        <div class="col col-12 col-sm-5 col-md-5">
+                            <h3>Le développement des BMS</h3>
+                            <p>BMN : Battery Mangement System
+                                <br>C’est un système électronique permettant le contrôle et la charge des différents éléments d’une batterie d’accumulateurs.
+                                <br>Un BMS est un élément indispensable sur tous les packs batteries.
+                                <br>Il surveille l’état de différents éléments de la batterie, tels que la tension, l’état de charge, la température, l’état de santé, le débit du réfrigérant ou encore le courant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2ème sous-partie : Notre stratégie de développement -->
+            <section class="strategieDev">
+                <h3>Nos principaux travaux</h3>
+                <!-- Collectivités et entreprises -->
+                <div class="container-fluid">
+                    <div class="main-container row">
+                        <div class="col col-12 col-sm-5 col-md-5 column1"><img src="assets/image/collectivité.jpeg" alt="Collectivités et entreprises"></div>
+                        <!-- séparateur -->
+                        <div class="col-sm-12 col-md-2 d-flex align-item-center justify-content-center">
+                            <div class="sepa"></div>
+                        </div>
+                        <div class="col col-12 col-sm-5 col-md-5">
+                            <h3>Auprès des collectivités et des entreprises</h3>                                
+                            <p>Les premières implantations sur l’Agglomération de Montpellier avec l’installation de 4 ombrières solaires ont été concluantes.                                        De plus, l’Agglomération de Toulouse s’est d’ores et déjà positionné pour en implanter sur son territoire.
+                                <br>Ces projets nous permettent d’accompagner au mieux les futures collectivités qui le souhaiteraient.
+                                <br>Pour ce faire, nous pouvons vous proposer une démonstration et vous accompagnez sur les points suivants :
+                                <ul>
+                                    <li>Étude de faisabilité</li>
+                                    <li>Mise en conformité avec le PLU</li>
+                                    <li>Appels d’offres (pour les collectivités)</li>
+                                    <li>Montage financier</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Particuliers et syndicats de propriété -->
+                <div class="container-fluid">
+                    <div class="main-container row">
+                        <div class="col col-12 col-sm-5 col-md-5 column1">
+                            <h3>Auprès des particuliers et des syndicats de propriété</h3>
+                            <div>Si vous souhaitez réaliser des économies d’énergie pour votre voiture et votre lieu d’habitation, agir pour le bien de la planète et investir pour votre avenir, nous avons la solution qu’il vous faut.</div>
+                        </div>
+                            <!-- séparateur -->
+                        <div class="col-sm-12 col-md-2 d-flex align-item-center justify-content-center">
+                            <div class="sepa"></div>
+                        </div>
+                        <div class="col col-12 col-sm-5 col-md-5"><img src="assets/image/particulier.jpeg" alt="Particuliers et syndicats de propriété"></div>
+                    </div>
+                </div>
+            </section>
+		</main>
+
+		<!-- Footer -->
+		<footer class="container-fluid">
+			<div class="footer-container row">
+				<div class="col col-12 col-sm-6 col-xl-3 d-flex">
+					<div class="footer-logo"></div>
+					<div class="col-content">
+						<h6 class="footer-subtitle subtitle-brand">Sunpower</h6>
+						2 rue de l'Innovation<br>
+						38000 Grenoble
+					</div>
+				</div>
+				<div class="col col-12 col-sm-6 col-xl-3">
+					<h6 class="footer-subtitle">NOUS SUIVRE</h6>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="logo-facebook"></ion-icon>
+						Facebook
+					</a>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="logo-twitter"></ion-icon>
+						Twitter
+					</a>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="logo-instagram"></ion-icon>
+						Instagram
+					</a>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="logo-linkedin"></ion-icon>
+						LinkedIn
+					</a>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="logo-youtube"></ion-icon>
+						YouTube
+					</a>
+					<a href="https://github.com/matteoo34/Sunpower" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="logo-github"></ion-icon>
+						GitHub
+					</a>
+				</div>
+				<div class="col col-12 col-sm-6 col-xl-3">
+					<h6 class="footer-subtitle">PLAN DU SITE</h6>
+					<a href="index.html" class="footer-link link-light">Accueil</a>
+					<a href="#presentation-anchor" class="footer-link link-light">Présentation</a>
+					<a href="ombrieres.html" class="footer-link link-light">Ombrières solaires</a>
+					<a href="retd.html" class="footer-link link-light">Recherche et développement</a>
+				</div>
+				<div class="col col-12 col-sm-6 col-xl-3">
+					<h6 class="footer-subtitle">NOUS CONTACTER</h6>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="call"></ion-icon>
+						04 76 00 00 00
+					</a>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="mail"></ion-icon>
+						contact@sunpower.com
+					</a>
+					<h6 class="footer-subtitle subtitle-join-us">NOUS REJOINDRE</h6>
+					<a href="#" class="footer-link link-light d-flex align-items-center">
+						<ion-icon name="mail"></ion-icon>
+						recrutement@sunpower.com
+					</a>
+				</div>
+			</div>
+			<div class="copyright-container row">
+				<div class="legal-notices col-12 col-md-6 text-center">
+					<a href="#" class="footer-link link-light">Mentions légales</a>
+				</div>
+				<div class="copyright col-12 col-md-6 text-center">Copyright &copy; 2021 Sunpower. Tous droits réservés.</div>
+			</div>
+		</footer>
+    </body>
+</html>
