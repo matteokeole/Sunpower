@@ -9,5 +9,10 @@ navLinks.forEach(function(btn) {
 			home.classList.remove("active");
 			presentation.classList.add("active")
 		}
+		if (this.classList.contains("home")) {
+			// The user clicked on the Home link
+			presentation.classList.remove("active");
+			home.classList.add("active")
+		}
 	})
 })
