@@ -1,9 +1,9 @@
 /** Footer **/
 
 footer {
+	margin-top: 50px;
 	background-color: var(--secondary);
-	color: #fff !important; /* Override Bootstrap default color */
-	user-select: none
+	color: #fff
 }
 
 /* Footer content */
@@ -26,7 +26,7 @@ footer .col:last-child {border: none}
 	height: 75px;
 	margin: 0 20px 0 8px;
 	border-radius: 50%;
-	background-color: var(--secondary-variant);
+	background-color: var(--secondary-variant)
 }
 
 /* Subtitles */
@@ -42,7 +42,7 @@ footer .col:last-child {border: none}
 .footer-link {
 	display: block;
 	opacity: 0.75;
-	color: #fff !important; /* Override Bootstrap default color */
+	user-select: none;
 	text-decoration: none;
 	transition-duration: 0.2s
 }

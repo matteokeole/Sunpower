@@ -19,14 +19,14 @@ nav {justify-content: flex-end}
 	padding: 0 10px;
 	border-radius: 50px;
 	background-color: rgba(0, 0, 0, 0.1);
-	color: #fff !important /* Override Bootstrap default color */
+	color: #fff
 }
 
 /* Navbar links */
 
 .nav-link:not(.contact-link) {
 	position: relative;
-	color: #fff !important; /* Override Bootstrap default color */
+	color: #fff;
 	transition: 0.2s
 }
 /* Active link */
@@ -39,7 +39,7 @@ nav {justify-content: flex-end}
 .contact-link {
 	border-radius: 50px;
 	background-color: var(--secondary);
-	color: #fff !important /* Override Bootstrap default color */
+	color: #fff !important
 }
 
 /* Contact button variant for small screens */
@@ -50,9 +50,9 @@ nav {justify-content: flex-end}
 	width: 50px;
 	height: 50px;
 	margin: 10px;
-	bottom: 10px;
-	left: 100%;
-	position: sticky;
+	right: 0;
+	bottom: 0;
+	position: fixed;
 	border-radius: 50%;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	background-color: var(--secondary);
@@ -61,9 +61,11 @@ nav {justify-content: flex-end}
 	transition-duration: 0.2s
 }
 .contact-link-rounded:hover {
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
 }
 .contact-link-rounded:active {
+	-webkit-transform: scale(0.95);
 	transform: scale(0.95);
 	transition-duration: 0.1s
 }
@@ -77,7 +79,7 @@ nav {justify-content: flex-end}
 	font-size: 30px
 }
 .navbar-toggler:focus {
-	box-shadow: none !important /* Remove Bootstrap default focus */
+	box-shadow: none /* Remove Bootstrap default focus */
 }
 
 /* Header media queries */
