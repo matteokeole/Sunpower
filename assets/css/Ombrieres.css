@@ -8,6 +8,13 @@ div.rang{
     margin-top: 220px;
 }
 
+/* séparateurs */
+.sepa{
+    border-left: solid #A4BD01;
+    border-width: 3px;
+    border-radius: 30%;
+}
+
 /* images */
 
 div.boxim1{
@@ -20,7 +27,9 @@ div #im1{
     background-repeat: no-repeat;
     background-size: 100%;
     width: 60vh;
-    height: 40vh;
+    height: 35vh;
+    margin-bottom: 30px;
+    order: 0;
 }
 
 /* déscriptif panneaux */
@@ -37,6 +46,11 @@ h3{
     text-decoration: underline 0.1em #A4BD01;
 }
 
+/* resume container */
+.resume{
+    margin-top: 220px;
+}
+
 /* descriptions des 3 elem*/
 p.elem{
     text-align: center;
@@ -47,4 +61,22 @@ p.elem{
 p{
     text-align: center;
     margin-top:50px;
+}
+
+/* last image */
+.para{
+    margin-top: 50px;
+    background-image: url(../image/test.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 40vh;
+}
+
+/* ordre des texte/images en mobile */
+@media screen and (max-width :576px){
+    .change {
+        order: -1 !important;
+    }
 }
