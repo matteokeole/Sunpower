@@ -12,3 +12,11 @@
 	font-family: "Tungsten Medium";
 	src: url(Tungsten-Medium.otf) format("opentype")
 }
+@font-face {
+	font-family: "Tungsten Semibold";
+	src: url(Tungsten-Semibold.otf) format("opentype")
+}
+@font-face {
+	font-family: "Tungsten Bold";
+	src: url(Tungsten-Bold.otf) format("opentype")
+}

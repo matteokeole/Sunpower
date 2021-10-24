@@ -38,10 +38,18 @@ body {
 
 /* Titles & subtitles */
 
+.title {
+	color: var(--secondary-variant);
+	font-family: "Tungsten Semibold";
+	font-size: 70px;
+	letter-spacing: 1px
+}
+
 .subtitle {
 	display: inline-block;
 	margin: 30px 0;
 	position: relative;
+	color: #444;
 	font-weight: 700
 }
 .subtitle::before {
