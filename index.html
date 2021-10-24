@@ -51,38 +51,96 @@
 				<a href="contact.html" class="nav-link contact-link">Contact</a>
 			</nav>
 		</header>
-		<a href="contact.html" class="contact-link-rounded">
-			<ion-icon name="chatbubbles"></ion-icon>
-		</a>
+
 		<!-- Banner -->
-		<div class="banner container-fluid" style="height: calc(100vh - 56px * 2)">
-			<i>Bannière ici</i>
-		</div>
+		<div class="banner container-fluid"></div>
+
 		<!-- Content -->
 		<main class="container">
 			<!-- Presentation -->
 			<div id="presentation-anchor" class="anchor"></div>
 			<div class="presentation-section">
-				<i>Présentation ici</i>
+				<i>Présentation</i>
 			</div>
 		</main>
+
+		<!-- Contact button (small screens) -->
+		<a href="contact.html" class="contact-link-rounded">
+			<ion-icon name="chatbubbles"></ion-icon>
+		</a>
+
 		<!-- Footer -->
 		<footer class="container-fluid">
 			<div class="footer-container row">
-				<div class="col col-12 col-sm-6 col-md-3">Section 1</div>
-				<div class="col col-12 col-sm-6 col-md-3">Section 2</div>
-				<div class="col col-12 col-sm-6 col-md-3">Section 3</div>
-				<div class="col col-12 col-sm-6 col-md-3">Section 4</div>
+				<div class="col col-12 col-sm-6 col-xl-3 d-flex">
+					<div class="footer-logo"></div>
+					<div class="col-content">
+						<h6 class="footer-subtitle subtitle-brand">Sunpower</h6>
+						2 rue de l'Innovation<br>
+						38000 Grenoble
+					</div>
+				</div>
+				<div class="col col-12 col-sm-6 col-xl-3">
+					<h6 class="footer-subtitle">NOUS SUIVRE</h6>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="logo-facebook"></ion-icon>
+						Facebook
+					</a>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="logo-twitter"></ion-icon>
+						Twitter
+					</a>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="logo-instagram"></ion-icon>
+						Instagram
+					</a>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="logo-linkedin"></ion-icon>
+						LinkedIn
+					</a>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="logo-youtube"></ion-icon>
+						YouTube
+					</a>
+					<a href="https://github.com/matteoo34/Sunpower" class="footer-link d-flex align-items-center">
+						<ion-icon name="logo-github"></ion-icon>
+						GitHub
+					</a>
+				</div>
+				<div class="col col-12 col-sm-6 col-xl-3">
+					<h6 class="footer-subtitle">PLAN DU SITE</h6>
+					<a href="index.html" class="footer-link d-flex align-items-center">Accueil</a>
+					<a href="#presentation-anchor" class="footer-link d-flex align-items-center">Présentation</a>
+					<a href="ombrieres.html" class="footer-link d-flex align-items-center">Ombrières solaires</a>
+					<a href="retd.html" class="footer-link d-flex align-items-center">Recherche et développement</a>
+				</div>
+				<div class="col col-12 col-sm-6 col-xl-3">
+					<h6 class="footer-subtitle">NOUS CONTACTER</h6>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="call"></ion-icon>
+						04 76 00 00 00
+					</a>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="mail"></ion-icon>
+						contact@sunpower.com
+					</a>
+					<h6 class="footer-subtitle subtitle-join-us">NOUS REJOINDRE</h6>
+					<a href="#" class="footer-link d-flex align-items-center">
+						<ion-icon name="mail"></ion-icon>
+						recrutement@sunpower.com
+					</a>
+				</div>
 			</div>
 			<div class="copyright-container row">
-				<div class="legal-notices col-6 text-center">Legal notices</div>
-				<div class="copyright col-6 text-center">Copyright</div>
+				<div class="legal-notices col-12 col-md-6 text-center">
+					<a href="#" class="footer-link">Mentions légales</a>
+				</div>
+				<div class="copyright col-12 col-md-6 text-center">Copyright &copy; 2021 Sunpower. Tous droits réservés.</div>
 			</div>
 		</footer>
 
 		<!-- Scripts -->
 		<script>
-			// Test /!\
 			const navLinks = document.querySelectorAll(".nav-link"),
 			home = navLinks[0],
 			presentation = navLinks[1];
