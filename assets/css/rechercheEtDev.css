@@ -1,25 +1,4 @@
-/** Recherche & Développement styles **/
-
-/* CSS imports */
-@import url(../fonts/fonts.css);
-@import url(header.css);
-@import url(footer.css);
-
-/* Variables */
-:root {
-	--primary: #a4bd01; /* Lightgreen */
-	--secondary: #427aa1; /* Lightblue */
-	--secondary-variant: #06668c /* Blue */
-}
-
-/* Text selection color */
-::selection {background-color: rgba(0, 0, 0, 0.1)}
-::-moz-selection {background-color: rgba(0, 0, 0, 0.1)}
-
-body {
-	margin: 0;
-	font-family: Poppins
-}
+/** Recherche & développement **/
 
 .rechercheEtDev {
 	height: 56px;
