@@ -87,17 +87,14 @@ p{
     text-align: center;
 }
 
-/* last image */
-.para{
-    margin-top: 50px;
-    background-image: url(../image/test4.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
+/* Parallax on the last image */
+.parallax {
     width: 100%;
     height: 40vh;
+    margin-top: 50px;
+    background: url(../image/test4.jpg) center fixed no-repeat;
+    background-size: cover
 }
-
 
 /* ordre des texte/images en mobile */
 @media screen and (max-width :769px){

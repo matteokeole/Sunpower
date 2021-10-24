@@ -7,7 +7,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 	tileSize: 512,
 	zoomOffset: -1,
 	accessToken: "pk.eyJ1IjoiamV0dHJlYmliZW1lIiwiYSI6ImNrdjUyOHcyYzFxc2UycGxwZ3U2NzgzZnYifQ.cGHHvqWik91FsGIaD-OviQ"
-}).addTo(map)
+}).addTo(map);
 
 // Markers
 L.marker([43.6038423422097, 3.91413688659668]).addTo(map).bindPopup("Montpellier (Odysseum)").openPopup();
