@@ -21,12 +21,16 @@ body {
 	font-family: Poppins
 }
 
-.anchor {
-	height: 56px;
-	margin-bottom: 10px
+/* Tests */
+
+.banner {
+	height: 100vh;
+	background: linear-gradient(70deg, #fff 45%, var(--primary) 45%)
 }
+
+.anchor {height: 56px}
 
 .presentation-section {
 	height: 100vh;
-	background-color: orange;
+	background-color: orange
 }

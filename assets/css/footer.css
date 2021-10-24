@@ -1,25 +1,85 @@
+/** Footer **/
+
 footer {
 	background-color: var(--secondary);
-	color: #fff !important
+	color: #fff !important; /* Override Bootstrap default color */
+	user-select: none
 }
 
-/* Footer container */
-.footer-container {
-	min-height: 300px
-}
+/* Footer content */
 
+.footer-container {padding-top: 20px}
+
+/* Sections */
 footer .col {
-	height: 300px;
+	padding-bottom: 20px;
+	border-width: 0;
+	border-style: solid;
+	border-color: var(--secondary-variant);
+	border-right-width: 2px
 }
-footer .col:not(:last-child) {
-	border-right: 2px solid;
-	border-right-color: var(--secondary-variant)
+footer .col:last-child {border: none}
+
+/* First section logo */
+.footer-logo {
+	width: 75px;
+	height: 75px;
+	margin: 0 20px 0 8px;
+	border-radius: 50%;
+	background-color: var(--secondary-variant);
 }
+
+/* Subtitles */
+.footer-subtitle {
+	margin-bottom: 10px;
+	font-weight: 700
+}
+.subtitle-brand {font-size: 20px}
+.subtitle-join-us {margin: 27px 0 8px 0}
+
+/* Links */
+
+.footer-link {
+	display: block;
+	opacity: 0.75;
+	color: #fff !important; /* Override Bootstrap default color */
+	text-decoration: none;
+	transition-duration: 0.2s
+}
+.footer-link:hover {opacity: 1}
+
+.footer-link ion-icon {margin-right: 5px}
 
 /* Copyright section */
+
 .copyright-container {
 	display: flex;
 	align-items: center;
-	height: 80px;
+	padding: 20px 0;
 	background-color: var(--secondary-variant)
+}
+
+.copyright {font-size: 14px}
+
+/* Media queries */
+
+/* 1200px max media query */
+@media screen and (max-width: 1200px) {
+	.footer-container {padding-top: 0}
+	footer .col {
+		padding-top: 20px;
+		border-right-width: 0;
+		border-bottom-width: 2px
+	}
+	footer .col:nth-child(3) {border-bottom-width: 0}
+}
+
+/* 768px max media query */
+@media screen and (max-width: 768px) {
+	.legal-notices {margin-bottom: 10px}
+}
+
+/* 576px max media query */
+@media screen and (max-width: 576px) {
+	footer .col:nth-child(3) {border-bottom-width: 2px}
 }
