@@ -4,3 +4,21 @@
 	height: 100vh;
 	background: linear-gradient(70deg, #fff 45%, var(--primary) 45%)
 }
+
+.banner-content {
+	line-height: 100px;
+	margin-left: 20px;
+	padding-top: 56px;
+	position: relative;
+	color: var(--secondary-variant);
+	font-family: "Tungsten Medium";
+	font-size: 100px
+}
+.banner-content::before {
+	content: "";
+	width: 5px;
+	height: 100%;
+	margin-left: -20px;
+	position: absolute;
+	background-color: var(--primary);
+}
