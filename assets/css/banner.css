@@ -1,0 +1,6 @@
+/** Banner **/
+
+.banner {
+	height: 100vh;
+	background: linear-gradient(70deg, #fff 45%, var(--primary) 45%)
+}
