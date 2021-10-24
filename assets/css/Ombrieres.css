@@ -24,7 +24,7 @@ div.boxim1{
 /* image panneaux */
 div #im1{
     border-radius: 10px;
-    background-image: url(../image/test.jpg);
+    background-image: url(../images/test.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 60vh;
@@ -44,7 +44,7 @@ div #im2{
 /* image ombriere */
 div #im3{
     border-radius: 10px;
-    background-image: url(../image/test2.jpg);
+    background-image: url(../images/test2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 60vh;
@@ -57,7 +57,7 @@ div #im3{
 /* image borne */
 div #im4{
     border-radius: 10px;
-    background-image: url(../image/test3.jpg);
+    background-image: url(../images/test3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 60vh;
@@ -92,7 +92,7 @@ p{
     width: 100%;
     height: 40vh;
     margin-top: 50px;
-    background: url(../image/test4.jpg) center fixed no-repeat;
+    background: url(../images/test4.jpg) center fixed no-repeat;
     background-size: cover
 }
 

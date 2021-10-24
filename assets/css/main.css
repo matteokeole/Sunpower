@@ -37,7 +37,7 @@ body {
 	z-index: 0
 }
 
-/* Titles & subtitles */
+/* Titles */
 
 .title {
 	color: var(--secondary-variant);
@@ -46,6 +46,7 @@ body {
 	letter-spacing: 1px
 }
 
+/* Subtitles */
 .subtitle {
 	display: inline-block;
 	margin: 30px 0;
@@ -64,7 +65,7 @@ body {
 	z-index: -1
 }
 
-/* Paragraphs links */
+/* Paragraph links */
 p a {
 	color: var(--tertiary) !important;
 	font-weight: 700;
