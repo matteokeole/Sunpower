@@ -110,7 +110,6 @@ p a:hover, ul a:hover {opacity: 0.75}
 
 /* image mtp */
 div #conf1{
-	border-radius: 10px;
 	background-image: url(../images/montpellier.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -118,10 +117,15 @@ div #conf1{
 	height: 25vh;
 }
 div #conf2{
-	border-radius: 10px;
 	background-image: url(../images/toulouse.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 60vh;
 	height: 25vh;
+}
+
+@media screen and (max-width: 768px) {
+	#map{
+		height: 350px;
+	}
 }
