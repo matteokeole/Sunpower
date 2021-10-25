@@ -2,12 +2,13 @@
 
 .soustitre {
     margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 #img1{
     border-radius: 10px;
     background-repeat: no-repeat;
-    background:url(../images/electroniquePuissance.jpeg) center no-repeat;
+    background:url(../images/electroniquePuissance.png) center no-repeat;
     background-size: 100%;
     width: 60vh;
     height: 35vh;
@@ -39,13 +40,13 @@
 }
 
 #img4{
-    border-radius: 10px;
+    border-radius: 50px;
     background-repeat: no-repeat;
     background:url(../images/collectivite.jpeg) center no-repeat;
     background-size: 100%;
-    width: 60vh;
-    height: 35vh;
-    margin-bottom: 30px;
+    width: 70vh;
+    height: 45vh;
+    margin-bottom: 60px;
     order: 0;
 }
 
@@ -62,8 +63,8 @@
 
 /* déscriptifs */
 div #im{
-    width: 40vh;
-    min-height: 40vh;
+    width: 50vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
 }
@@ -72,5 +73,8 @@ div #im{
 @media screen and (max-width :769px){
     .change {
         order: -1 !important;
+    }
+    div.rang{
+        margin-top: 20px;
     }
 }
