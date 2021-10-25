@@ -16,3 +16,9 @@ navLinks.forEach(function(btn) {
 		}
 	})
 })
+
+if (window.location.hash) {
+	// There is an anchor in the URL
+	let hash = window.location.hash.length;
+	
+}
