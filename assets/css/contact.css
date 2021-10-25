@@ -53,10 +53,10 @@ label {
 	margin-bottom: ;
 }
 
-input, textarea{
+/* input, textarea{
 	background-color: var(--primary);
 	opacity: 30%;
-}
+} */
 
 input.error{
 	background-color: red;
