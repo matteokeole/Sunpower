@@ -29,6 +29,9 @@ div #im {
 	min-height: 50vh
 }
 
+/* Lists */
+ul {text-align: left}
+
 /* Change image/text order for small screens */
 @media screen and (max-width: 769px){
 	.change {order: -1 !important}
