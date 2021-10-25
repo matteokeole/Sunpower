@@ -24,10 +24,20 @@
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
+.entre{
+	background-image: url(../images/particulier.png);
+	background-size: cover;
+}
+
 /* Form content */
 
 label {
 	display: flex;
 	flex-direction: column;
+}
+
+/*  */
+.form-title{
+	margin-bottom: ;
 }
 
