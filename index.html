@@ -80,7 +80,7 @@
 		<main class="container text-center">
 			<!-- Presentation -->
 			<div id="presentation-anchor" class="anchor"></div>
-			<div class="presentation-section">
+			< class="presentation-section">
 				<h2 class="title">Qui sommes-nous ?</h2>
 				<p>
 					Depuis sa fondation en 2013, la société Sunpower conçoit et commercialise des panneaux solaires à haut rendement.<br>
@@ -95,35 +95,71 @@
 				<p>
 					Depuis 2015, nous collaborons avec l'<a href="https://www.ines-solaire.org/en/">INES</a> pour la conception de panneaux solaires et avec le <a href="https://www.cea.fr/">CEA</a> pour la mise au point d'un accumulateur à haute densité d'énergie.
 				</p>
-				<!-- carroussel partenaire -->
-				<div class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-bs-interval="1000">
-							<img src="assets/images/INES.png" 
-							alt="Carrousel slide 1" 
-							class="d-block w-50">
-						</div>
-						<div class="carousel-item"
-						data-bs-interval="1000">
-							<img src="assets/images/PSA.png" 
-							alt="Carrousel slide 2" 
-							class="d-block w-50">
-						</div>
-						<div class="carousel-item"
-						data-bs-interval="1000">
-							<img src="assets/images/CEA.png" 
-							alt="Carrousel slide 3" 
-							class="d-block w-50">
-						</div>
-						<div class="carousel-item"
-						data-bs-interval="1000">
-							<img src="assets/images/region.png" 
-							alt="Carrousel slide 3" 
-							class="d-block w-50">
-						</div>
-					</div>
-				</div>
+				<!-- carroussel partenaire
+							<div class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner text-center">
+									<div class="carousel-item active" data-bs-interval="1000">
+										<img src="assets/images/INES.png" 
+										alt="Carrousel slide 1" 
+										class="d-block w-100">
+									</div>
+									<div class="carousel-item"
+									data-bs-interval="1000">
+										<img src="assets/images/PSA.png" 
+										alt="Carrousel slide 2" 
+										class="d-block w-100">
+									</div>
+									<div class="carousel-item"
+									data-bs-interval="1000">
+										<img src="assets/images/CEA.png" 
+										alt="Carrousel slide 3" 
+										class="d-block w-100">
+									</div>
+									<div class="carousel-item"
+									data-bs-interval="1000">
+										<img src="assets/images/region.png" 
+										alt="Carrousel slide 3" 
+										class="d-block w-100">
+									</div>
+								</div>
+							</div> -->
 
+							<!-- Carousel -->
+							<div class="container-fluid carousel-container">
+								<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+									<!-- Slides -->
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<img src="assets/images/region.png" class="d-block w-100" alt="Carousel slide 1">
+										</div>
+										<div class="carousel-item active">
+											<img src="assets/images/CEA.png" class="d-block w-100" alt="Carousel slide 1">
+										</div>
+										<div class="carousel-item">
+											<img src="assets/images/INES.png" class="d-block w-100" alt="Carousel slide 2">
+										</div>
+										<div class="carousel-item">
+											<img src="assets/images/PSA.png" class="d-block w-100" alt="Carousel slide 3">
+										</div>
+									</div>
+									<!-- Slide indicators -->
+									<div class="carousel-indicators">
+										<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+										<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									</div>
+									<!-- Prev button -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Previous</span>
+									</button>
+									<!-- Next button -->
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="visually-hidden">Next</span>
+									</button>
+								</div>
+							</div>
 				<h3 class="subtitle">Ils nous font confiance</h3>
 				<p>
 					Montpellier est dotée de 4 ombrières avec 7 bornes de chargement chacunes et l'agglomération de Toulouse a engagé des démarches pour profiter de nos technologies.
