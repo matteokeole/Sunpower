@@ -1,24 +1,19 @@
-// Nav links
+// Active nav links
 const navLinks = document.querySelectorAll(".nav-link"),
 home = navLinks[0],
-presentation = navLinks[1];
-navLinks.forEach(function(btn) {
-	btn.addEventListener("click", function() {
-		if (this.classList.contains("presentation")) {
-			// The user clicked on the Presentation link
-			home.classList.remove("active");
-			presentation.classList.add("active")
-		}
-		if (this.classList.contains("home")) {
-			// The user clicked on the Home link
-			presentation.classList.remove("active");
-			home.classList.add("active")
-		}
-	})
-})
+presentation = navLinks[1],
+checkHash = function() {
+	if (window.location.hash) {
+		// Presentation anchor
+		home.classList.remove("active");
+		presentation.classList.add("active")
+	} else {
+		// Home anchor
+		presentation.classList.remove("active");
+		home.classList.add("active")
+	}
+};
 
-if (window.location.hash) {
-	// There is an anchor in the URL
-	let hash = window.location.hash.length;
-	
-}
+// Events listeners
+window.addEventListener("load", checkHash);
+window.addEventListener("hashchange", checkHash)
