@@ -11,7 +11,8 @@
 	--primary: #a4bd01; /* Lightgreen */
 	--secondary: #427aa1; /* Lightblue */
 	--secondary-variant: #06668c; /* Blue */
-	--tertiary: #ff8800 /* Orange */
+	--tertiary: #ff8800; /* Orange */
+	--error: #ff5f5f /* Red */
 }
 
 /* Text selection color */
