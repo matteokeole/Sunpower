@@ -1,3 +1,5 @@
+/** Ombrières solaires **/
+
 /* Titre secondaire */
 div.boxtitre{
     margin-top: 90px;
@@ -85,9 +87,8 @@ p{
     text-align: center;
 }
 
-/* Parallax on the last image */
+/* Parallax effect on the last image */
 .parallax {
-    width: 100%;
     height: 40vh;
     margin-top: 50px;
     background: url(../images/test4.jpg) center fixed no-repeat;
