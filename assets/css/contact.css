@@ -35,33 +35,98 @@
 	background-image: url(../images/particulier.png);
 	background-size: cover;
 }
+
 /* image collectivité */
 .collec{
 	background-image: url(../images/collectivite.png);
 	background-size: cover;
 }
+
 /* image entreprise */
 .entre{
 	background-image: url(../images/chef-dentreprise.png);
 	background-size: cover;
 }
 
+.form-icon{
+	margin-top: 20px;
+}
 
 label {
 	display: flex;
 	flex-direction: column;
 }
 
-/* input, textarea{
-	background-color: var(--primary);
-	opacity: 30%;
-} */
+/* zones de texte */
+input{
+	border : none;
+	border-bottom: 1px solid;
+	height: 25px;
+}
 
+input, textarea{
+	border-color: var(--primary);
+}
+
+textarea{
+	min-height: 200px;
+	resize : vertical;
+}
+/* Fin zones de texte */
+
+/* champs si erreur de saisie */
 input.error{
 	background-color: red;
+	font-size: 10px;
 }
 
-.form-icon{
+/* libéllé des champs */
+.placeholder{
+	padding-top : 15px;
+}
+
+/* encadré des champs */
+fieldset{
 	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left : 30px;
+	margin-right: 30px;
+	padding-bottom: 20px;
+	border : 2px solid rgba(104, 99, 99, 0.123);
+	border-radius: 8px;
 }
 
+/* Libellé de l'encadré */
+legend{
+	font-weight: bold;
+	font-size: 18px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* Boutons */
+.btn{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: white;
+	font-size: 15px;
+}
+
+/* Bouton valider */
+.btn-submit{
+	background-color: var(--primary);
+	color: white;
+	font-weight: bold;
+}
+
+/* Bouton annuler */
+.btn-cancel{
+	background-position: center;
+	background-color: none;
+	font-weight: bold;
+}
