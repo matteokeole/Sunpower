@@ -63,7 +63,7 @@ footer .col:last-child {border: none}
 
 /* Media queries */
 
-/* 1200px max media query */
+/* 1200px max (Bootstrap xl) */
 @media screen and (max-width: 1200px) {
 	.footer-container {padding-top: 0}
 	footer .col {
@@ -74,12 +74,12 @@ footer .col:last-child {border: none}
 	footer .col:nth-child(3) {border-bottom-width: 0}
 }
 
-/* 768px max media query */
+/* 768px max (Bootstrap md) */
 @media screen and (max-width: 768px) {
 	.legal-notices {margin-bottom: 10px}
 }
 
-/* 576px max media query */
+/* 576px max (Bootstrap xs) */
 @media screen and (max-width: 576px) {
 	footer .col:nth-child(3) {border-bottom-width: 2px}
 }

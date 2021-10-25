@@ -32,8 +32,11 @@ div #im {
 /* Lists */
 ul {text-align: left}
 
-/* Change image/text order for small screens */
-@media screen and (max-width: 769px){
+/* R&D page media queries */
+
+/* 768px max (Bootstrap md) */
+@media screen and (max-width: 768px) {
+	/* Change image/text order for small screens */
 	.change {order: -1 !important}
 	div.rang {margin-top: 20px}
 	.boxim1 {align-items: center}

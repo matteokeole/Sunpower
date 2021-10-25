@@ -85,7 +85,7 @@ nav {justify-content: flex-end}
 
 /* Header media queries */
 
-/* 992px min media query */
+/* 992px min (Bootstrap lg) */
 @media screen and (min-width: 992px) {
 	/* Large screen, full header without dropdown menu */
 	.nav-link:not(.contact-link) {
@@ -109,7 +109,7 @@ nav {justify-content: flex-end}
 	.nav-link:not(.contact-link):active, .nav-link:active::before {opacity: 0.65}
 }
 
-/* 991px max media query */
+/* 991px max (Bootstrap lg and larger) */
 @media screen and (max-width: 991px) {
 	/* Small screen, minimized header with dropdown menu */
 	.nav-link {
