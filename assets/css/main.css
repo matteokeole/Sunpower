@@ -44,7 +44,7 @@ body {
 .title {
 	color: var(--secondary-variant);
 	font-family: "Tungsten Semibold";
-	font-size: 70px;
+	font-size: 60px;
 	letter-spacing: 1px
 }
 
@@ -97,6 +97,8 @@ p a:hover, ul a:hover {opacity: 0.75}
 	display: block;
 	color: #757575
 }
+
+.breadcrumb-link a:not(:last-of-type) {color: #000 !important}
 
 /* Indicators and prev/next buttons */
 .carousel-indicators, .carousel-control-prev, .carousel-control-next {
