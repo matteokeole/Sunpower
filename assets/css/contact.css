@@ -1,0 +1,25 @@
+.form-select-section {
+	padding: 20px;
+	border: 1px solid #bbb;
+	border-radius: 10px;
+}
+
+.btn-form {
+	width: 200px;
+	height: 200px;
+	margin: 0 10px;
+	border: none;
+	border-radius: 7px;
+	background-color: transparent;
+}
+.btn-form:hover {
+	background-color: #eee;
+}
+
+.form-icon {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
