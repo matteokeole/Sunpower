@@ -21,7 +21,7 @@ div.boxim1{
 /* image panneaux */
 div #im1{
 	border-radius: 10px;
-	background-image: url(../images/test.jpg);
+	background-image: url(../images/mon);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 60vh;
