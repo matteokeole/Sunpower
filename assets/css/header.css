@@ -19,10 +19,9 @@ nav {
 
 /* Navbar brand */
 .navbar-brand {
-	padding: 0 10px;
-	border-radius: 50px;
-	background-color: rgba(0, 0, 0, 0.1);
-	color: #fff
+	background: url(../../favicon2.ico) center no-repeat;
+	background-size: 100%;
+	color: transparent !important /* Override Bootstrap default color */
 }
 
 /* Navbar links */
