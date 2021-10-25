@@ -79,11 +79,8 @@ p{
 }
 /* descriptions 1/2/4 elem*/
 p.elem{
-    margin-top:50px;
-}
-/* last paragraphe */
-.lastp{
-    text-align: justify;
+    margin-top: 50px;
+    text-align: justify
 }
 
 /* Parallax effect on the last image */
