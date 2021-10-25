@@ -1,83 +1,37 @@
-/** Recherche & développement **/
+/** Research & development page **/
 
-.soustitre {
-    margin-top: 100px;
-    margin-bottom: 10px;
+.soustitre {margin: 100px 0 10px 0}
+
+/* Images */
+
+.img {
+	order: 0;
+	width: 60vh;
+	height: 35vh;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
 }
 
-#img1{
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background:url(../images/electroniquePuissance.png) center no-repeat;
-    background-size: cover;
-    width: 60vh;
-    height: 35vh;
-    margin-bottom: 30px;
-    order: 0;
+#img1 {background-image: url(../images/electroniquePuissance.png)}
+#img2 {background-image: url(../images/electroniqueEmbarquee.jpeg)}
+#img3 {background-image: url(../images/BMS.png)}
+#img4 {background-image: url(../images/collectivite.jpeg)}
+#img5 {background-image: url(../images/particulier.jpeg)}
+
+/* Descriptions */
+div #im {
+	display: flex;
+	justify-content: center;
+	width: 50vh;
+	min-height: 50vh
 }
 
-#img2{
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background:red url(../images/electroniqueEmbarquee.jpeg) center no-repeat;
-    background-size: cover;
-    width: 100vh;
-    height: 40vh;
-    margin-bottom: 30px;
-    order: 0;
-
-}
-
-#img3{
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background:url(../images/BMS.png) center no-repeat;
-    background-size: cover;
-    width: 60vh;
-    height: 35vh;
-    margin-bottom: 30px;
-    order: 0;
-}
-
-#img4{
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background:url(../images/collectivite.jpeg) center no-repeat;
-    background-size: cover;
-    width: 60vh;
-    height: 35vh;
-    margin-bottom: 80px;
-    order: 0;
-}
-
-#img5{
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background:url(../images/particulier.jpeg) center no-repeat;
-    background-size: 100%;
-    width: 60vh;
-    height: 35vh;
-    margin-bottom: 30px;
-    order: 0;
-}
-
-/* déscriptifs */
-div #im{
-    width: 50vh;
-    min-height: 50vh;
-    display: flex;
-    justify-content: center;
-}
-
-/* ordre des texte/images en mobile */
-@media screen and (max-width :769px){
-    .change {
-        order: -1 !important;
-    }
-    div.rang{
-        margin-top: 20px;
-    }
-    .boxim1{
-        align-items: center;
-    }
+/* Change image/text order for small screens */
+@media screen and (max-width: 769px){
+	.change {order: -1 !important}
+	div.rang {margin-top: 20px}
+	.boxim1 {align-items: center}
 }
