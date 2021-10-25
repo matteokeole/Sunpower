@@ -19,9 +19,9 @@
 #img2{
     border-radius: 10px;
     background-repeat: no-repeat;
-    background:url(../images/electroniqueEmbarquee.jpeg) center no-repeat;
-    background-size: 100%;
-    width: 40vh;
+    background:red url(../images/electroniqueEmbarquee.jpeg) center no-repeat;
+    background-size: cover;
+    width: 100vh;
     height: 40vh;
     margin-bottom: 30px;
     order: 0;
@@ -76,5 +76,8 @@ div #im{
     }
     div.rang{
         margin-top: 20px;
+    }
+    .boxim1{
+        align-items: center;
     }
 }
