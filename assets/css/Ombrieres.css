@@ -85,9 +85,8 @@ p{
     text-align: center;
 }
 
-/* Parallax on the last image */
+/* Parallax effect on the last image */
 .parallax {
-    width: 100%;
     height: 40vh;
     margin-top: 50px;
     background: url(../images/test4.jpg) center fixed no-repeat;
