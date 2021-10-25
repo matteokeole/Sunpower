@@ -39,6 +39,17 @@ ul {text-align: left}
 	margin-top: 120px;
 }
 
+.reveal {
+	opacity : 0;
+	transform: translateY(-30px);
+}
+
+.reveal-visible{
+	opacity : 1;
+	transform: translateY(0);
+	transition: 1.8s;
+}
+
 /* R&D page media queries */
 
 /* 768px max (Bootstrap md) */
