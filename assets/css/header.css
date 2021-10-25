@@ -12,7 +12,10 @@ header {
 }
 
 /* Navbar */
-nav {justify-content: flex-end}
+nav {
+	justify-content: flex-end;
+	border-radius: 7px
+}
 
 /* Navbar brand */
 .navbar-brand {
@@ -112,6 +115,7 @@ nav {justify-content: flex-end}
 /* 991px max (Bootstrap lg and larger) */
 @media screen and (max-width: 991px) {
 	/* Small screen, minimized header with dropdown menu */
+	nav {background-color: var(--primary)}
 	.nav-link {
 		margin-right: 0;
 		padding: 5px 0;

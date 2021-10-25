@@ -2,34 +2,31 @@
 
 .banner {
 	height: 100vh;
-	background: linear-gradient(70deg, #fff 50%, var(--primary) 0), linear-gradient(90deg, blue 50%, red 50%)
+	background: linear-gradient(70deg, #fff 50%, var(--primary) 0)
 }
 
 .banner-content {
-	flex-grow: 1;
+	margin: 100px 20px auto 20px;
+	border-left: 5px solid var(--primary)
 }
 
-.banner-image {background: url(../images/banner.png) center 100% no-repeat}
-
+/* Banner title */
 .banner-title {
 	line-height: 100px;
-	margin: 100px 0 0 20px;
 	padding-left: 15px;
-	position: relative;
-	border-left: 5px solid var(--primary);
 	color: var(--secondary-variant);
 	font-family: "Tungsten Semibold";
 	font-size: 100px
 }
 
-.banner-desc {
-	background-color: orange;
-}
+/* Banner description & links */
+
+.banner-desc {margin-left: 20px}
 
 .banner-link {
 	height: 50px;
 	line-height: 50px;
-	margin: 10px 0 0 20px;
+	margin-bottom: 10px;
 	padding: 0 10px;
 	border-radius: 7px;
 	background-color: var(--secondary);
@@ -37,21 +34,54 @@
 	text-decoration: none;
 	transition-duration: 0.2s
 }
-.banner-link:hover {
-	-webkit-transform: rotateZ(4deg);
-	transform: rotateZ(4deg);
-}
+.banner-link:hover {opacity: 0.75}
 .banner-link:active {
-	-webkit-transform: rotateZ(-4deg) scale(0.9);
-	transform: rotateZ(-4deg) scale(0.9);
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
 	transition-duration: 0.1s
 }
 
-.banner-link ion-icon {margin-left: 8px}
+.banner-link ion-icon {
+	margin-left: 8px;
+	font-size: 24px
+}
+.banner-link:first-of-type:hover ion-icon {
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+	transition-duration: 0.5s
+}
+.banner-link:last-of-type:hover ion-icon {
+	-webkit-animation: shake 0.1s;
+	animation: shake 0.1s;
+	transition-duration: 0.5s
+}
+
+/* Ion-icon shake animation */
+@keyframes shake {
+	0%, 100% {
+		-webkit-transform: translateX(3px);
+		transform: translateX(3px)
+	}
+	50% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px)
+	}
+}
+
+/* Banner image */
+
+.banner-image {
+	flex-grow: 1;
+	margin: 100px 50px;
+	background: url(../images/banner.png) center no-repeat;
+	background-size: contain
+}
 
 /* Banner media queries */
 
-/* 1200px max (Bootstrap xl) */
+/* 1400px max (Bootstrap xxl) */
 @media screen and (max-width: 1200px) {
-	.banner {background-color: var(--primary);}
+	.banner {background: var(--primary)}
+	.banner-content {border-color: rgba(0, 0, 0, 0.2)}
+	.banner-image {display: none}
 }
