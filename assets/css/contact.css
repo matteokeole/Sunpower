@@ -1,12 +1,14 @@
 .form-select-section {
-	padding: 20px;
-	border: 1px solid #bbb;
+	padding: 50px;
+	border: 1px solid #ccc;
 	border-radius: 10px;
+	margin: auto 5px;
+
 }
 
 .btn-form {
 	width: 200px;
-	height: 200px;
+	height: 280px;
 	margin: 0 10px;
 	border: none;
 	border-radius: 7px;
@@ -22,10 +24,20 @@
 	height: 150px;
 	border-radius: 50%;
 	background-color: rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+
 }
 
-.entre{
+.parti{
 	background-image: url(../images/particulier.png);
+	background-size: cover;
+}
+.collec{
+	background-image: url(../images/collectivite.png);
+	background-size: cover;
+}
+.entre{
+	background-image: url(../images/chef-dentreprise.png);
 	background-size: cover;
 }
 
@@ -36,8 +48,6 @@ label {
 	flex-direction: column;
 }
 
-/*  */
-.form-title{
-	margin-bottom: ;
+.form-icon{
+	margin-top: 20px;
 }
-
