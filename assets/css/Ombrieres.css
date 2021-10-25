@@ -104,4 +104,13 @@ p.elem{
     .change {
         order: -1 !important;
     }
+    div.rang{
+        margin-top: 20px;
+    }
+    div.resume{
+        margin-top: 20px;
+    }
+    footer{
+        margin-top: 0;
+    }    
 }
