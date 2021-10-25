@@ -23,7 +23,7 @@ div #im1{
     border-radius: 10px;
     background-image: url(../images/test.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 60vh;
     height: 35vh;
     margin-bottom: 30px;
@@ -42,7 +42,7 @@ div #im2{
 div #im3{
     border-radius: 10px;
     background:url(../images/test2.jpg) center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 60vh;
     height: 35vh;
     margin-bottom: 30px;
@@ -54,7 +54,7 @@ div #im3{
 div #im4{
     border-radius: 10px;
     background: url(../images/test3.jpg) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 60vh;
     height: 35vh;
     margin-bottom: 30px;
