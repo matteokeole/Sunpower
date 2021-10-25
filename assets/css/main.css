@@ -27,15 +27,15 @@ body {
 
 .anchor {height: 56px}
 
-.presentation-section {
-	height: 100vh
-}
+.presentation-section {height: 100vh}
+
+/* Leaflet map container */
 
 .map-section {margin-top: 50px}
 
 #map {
 	height: 500px;
-	margin-top: 20px;
+	margin-top: 30px;
 	border-radius: 10px;
 	z-index: 0
 }
