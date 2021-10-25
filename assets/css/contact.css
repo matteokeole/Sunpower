@@ -76,7 +76,7 @@ textarea{
 
 /* champs si erreur de saisie */
 input.error{
-	background-color: red;
+	background-color: var(--error);
 	font-size: 10px;
 }
 
