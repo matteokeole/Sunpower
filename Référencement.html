@@ -1,0 +1,44 @@
+<!-- L'en-tête principal -->
+<header role="banner"> <h1></h1> </header>
+<!-- Le contenu principal -->
+<main role="main"></main>
+<!-- Le pied de page (informations légales, etc.) -->
+<!-- !!! Ne pas inclure dans le role du footer la répétitiion du plan de site -->
+<footer role="contentinfo"></footer>
+
+<!-- Le moteur de recherche : role="search" ; -->
+
+<!-- La navigation principale et les éventuelles navigations secondaires -->
+<!-- Elles doivent être suivies d'un attribut id ou une ancre -->
+<!-- Aria-label est utile pour les lecteur d'écran -->
+<nav role="navigation" id="menu-de-navigation" aria-label="menu-de-navigation"></nav>
+
+<!-- Si changement de langue dans la page -->
+<p>Retrouvez vos interprètes préférés au cours de l'<span
+    lang="en">after</span> organisé par nos partenaires.</p>
+
+<!-- Insertion d'un tableau -->
+<table role="presentation">
+    <tr>
+     <td>[votre contenu]</td>
+     <td>[votre contenu]</td>
+    </tr>
+    <tr>
+     <td>[votre contenu]</td>
+     <td>[votre contenu]</td>
+    </tr>
+</table>
+
+<!-- Pour rendre les intitulés de boutons pertinents, il faut, soit rendre le texte contenu dans l'attribut value explicite, soit ajouter un title sur l'élément pour l’expliciter. -->
+<input type="submit" value="Envoyer le message" />
+<input type="submit" value="GO" title="Réserver les billets sélectionnés" />
+
+<!-- Étiquettes de formulaire -->
+<p id="name">Votre Nom</p>
+<input type="text" aria-labelledby="name" />
+<!-- ou -->
+<p>Votre Nom</p>
+<input type="text" aria-label="Votre nom" />
+
+<!-- Éviter les balises <div> et <span> -->
+<p></p>
