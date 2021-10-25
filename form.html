@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+	</head>
+
+	<body>
+		<form method="POST" action="index.html" class="companies">
+			<h3 class="subtitle">Entreprises et syndics</h3>
+			<fieldset>
+				<legend>Coordonnées</legend>
+				<label class="label-socialReason">
+					<span class="placeholder">Raison sociale</span>
+					<input type="text" name="socialReason" id="socialReason">
+				</label>
+				<label class="label-name">
+					<span class="placeholder">Nom du responsable</span>
+					<input type="text" name="lastName" id="lastName1">
+				</label>
+				<label class="label-firstName">
+					<span class="placeholder">Prénom du responsable</span>
+					<input type="text" name="firstName" id="firstName1">
+				</label>
+				<label class="label-quality">
+					<span class="placeholder">Qualité du responsable</span>
+					<input type="text" name="quality" id="quality">
+				</label>
+				<label class="label-number">
+					<span class="placeholder">Numéro de téléphone</span>
+					<input type="text" name="number" id="number">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Adresse</legend>
+				<label class="label-adress1">
+					<span class="placeholder">Adresse (ligne 1)</span>
+					<input type="text" name="adress1" id="adress1">
+				</label>
+				<label class="label-adress2">
+					<span class="placeholder">Adresse (ligne 2)</span>
+					<input type="text" name="adress2" id="adress2">
+				</label>
+				<label class="label-postalCode">
+					<span class="placeholder">Code postal</span>
+					<input type="text" name="postalCode" id="postalCode">
+				</label>
+				<label class="label-country">
+					<span class="placeholder">Ville</span>
+					<input type="text" name="country" id="country">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Projet</legend>
+				<label class="label-project">
+					<span class="placeholder">Description du projet</span>
+					<textarea type="text" name="project" id="project"></textarea>
+				</label>
+			</fieldset>
+			<button type="button" class="btn btn-cancel">Annuler</button>
+			<button type="submit" class="btn btn-submit">Envoyer</button>
+		</form>
+
+		<!-- <form method="POST" action="index.html" class="communities">
+			<h3 class="subtitle">Collectivités</h3>
+			<fieldset>
+				<legend>Coordonnées</legend>
+				<label class="label-communities">
+					<span class="placeholder">Nom de la collectivité</span>
+					<input type="text" name="communities" id="communities">
+				</label>
+				<label class="label-name">
+					<span class="placeholder">Nom du responsable</span>
+					<input type="text" name="lastName" id="lastName2">
+				</label>
+				<label class="label-firstName">
+					<span class="placeholder">Prénom du responsable</span>
+					<input type="text" name="firstName" id="firstName2">
+				</label>
+				<label class="label-number">
+					<span class="placeholder">Numéro de téléphone</span>
+					<input type="text" name="number" id="number">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Adresse</legend>
+				<label class="label-adress1">
+					<span class="placeholder">Adresse (ligne 1)</span>
+					<input type="text" name="adress1" id="adress1">
+				</label>
+				<label class="label-adress2">
+					<span class="placeholder">Adresse (ligne 2)</span>
+					<input type="text" name="adress2" id="adress2">
+				</label>
+				<label class="label-postalCode">
+					<span class="placeholder">Code postal</span>
+					<input type="text" name="postalCode" id="postalCode">
+				</label>
+				<label class="label-country">
+					<span class="placeholder">Ville</span>
+					<input type="text" name="country" id="country">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Projet</legend>
+				<label class="label-project">
+					<span class="placeholder">Description du projet</span>
+					<input type="text" name="project" id="project">
+				</label>
+			</fieldset>
+			<button type="button" class="btn btn-cancel">Annuler</button>
+			<button type="submit" class="btn btn-submit">Envoyer</button>
+		</form>
+
+		<form method="POST" action="index.html" class="individuals">
+			<h3 class="subtitle">Particuliers</h3>
+			<fieldset>
+				<legend>Coordonnées</legend>
+				<label class="label-name">
+					<span class="placeholder">Nom</span>
+					<input type="text" name="lastName" id="lastName3">
+				</label>
+				<label class="label-firstName">
+					<span class="placeholder">Prénom</span>
+					<input type="text" name="firstName" id="firstName3">
+				</label>
+				<label class="label-number">
+					<span class="placeholder">Numéro de téléphone</span>
+					<input type="text" name="number" id="number">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Adresse</legend>
+				<label class="label-adress1">
+					<span class="placeholder">Adresse (ligne 1)</span>
+					<input type="text" name="adress1" id="adress1">
+				</label>
+				<label class="label-adress2">
+					<span class="placeholder">Adresse (ligne 2)</span>
+					<input type="text" name="adress2" id="adress2">
+				</label>
+				<label class="label-postalCode">
+					<span class="placeholder">Code postal</span>
+					<input type="text" name="postalCode" id="postalCode">
+				</label>
+				<label class="label-country">
+					<span class="placeholder">Ville</span>
+					<input type="text" name="country" id="country">
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Projet</legend>
+				<label class="label-project">
+					<span class="placeholder">Description du projet</span>
+					<input type="text" name="project" id="project">
+				</label>
+			</fieldset>
+			<button type="button" class="btn btn-cancel">Annuler</button>
+			<button type="submit" class="btn btn-submit">Envoyer</button>
+		</form> -->
+
+		<script src="assets/js/form.js"></script>
+	</body>
+
+</html>
