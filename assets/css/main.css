@@ -18,6 +18,8 @@
 ::selection {background-color: rgba(0, 0, 0, 0.1)}
 ::-moz-selection {background-color: rgba(0, 0, 0, 0.1)}
 
+html {min-height: 100vh}
+
 body {
 	margin: 0;
 	font-family: Poppins
@@ -37,6 +39,8 @@ body {
 	height: 500px;
 	margin-top: 30px;
 	border-radius: 10px;
+	overflow: hidden;
+	/*pointer-events: ;*/
 	z-index: 0
 }
 

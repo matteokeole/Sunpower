@@ -39,7 +39,8 @@ nav {justify-content: flex-end}
 .contact-link {
 	border-radius: 50px;
 	background-color: var(--secondary);
-	color: #fff !important
+	color: #fff !important; /* Override Bootstrap default color */
+	transition: 0.2s
 }
 
 /* Contact button variant for small screens */
@@ -60,11 +61,11 @@ nav {justify-content: flex-end}
 	font-size: 25px;
 	transition-duration: 0.2s
 }
-.contact-link-rounded:hover {
+.contact-link:hover, .contact-link-rounded:hover {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1)
 }
-.contact-link-rounded:active {
+.contact-link:active, .contact-link-rounded:active {
 	-webkit-transform: scale(0.95);
 	transform: scale(0.95);
 	transition-duration: 0.1s
@@ -101,11 +102,11 @@ nav {justify-content: flex-end}
 		background-color: #fff;
 		transition-duration: 0.4s
 	}
-	.nav-link:active, .nav-link:active::before {opacity: 0.65}
 	.nav-link:hover::before {
 		width: 100%;
 		left: 0
 	}
+	.nav-link:not(.contact-link):active, .nav-link:active::before {opacity: 0.65}
 }
 
 /* 991px max media query */
