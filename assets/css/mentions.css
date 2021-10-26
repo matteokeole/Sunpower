@@ -17,6 +17,10 @@ pre {
     font-family: Poppins;
 }
 
-pre h5, pre h6 {font-weight: bold}
+.sousTitreMentions, .articleMentions {font-weight: bold;}
+
+.articleMentions {font-size: 22px;}
+
+.sousTitreMentions {font-size: 18px;}
 
 .mentions-logo {width: 100px}
