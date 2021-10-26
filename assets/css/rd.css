@@ -32,22 +32,24 @@ div #im {
 /* Lists */
 ul {text-align: left}
 
-.resume{
+.resume {
 	text-align: center;
-	padding-left: 50px;
-	padding-right: 50px;
 	margin-top: 120px;
+	padding-left: 50px;
+	padding-right: 50px
 }
 
-[class*="reveal-"] {
-	opacity : 0;
-	transform: translateY(-50px);
+.reveal {
+	opacity: 0;
+	-webkit-transform: translateY(-50px);
+	transform: translateY(-50px)
 }
 
-.reveal-visible{
-	opacity : 1;
+.reveal-visible {
+	opacity: 1;
+	-webkit-transform: translateY(0);
 	transform: translateY(0);
-	transition: 1.8s;
+	transition-duration: 1.8s
 }
 
 /* R&D page media queries */
