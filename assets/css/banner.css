@@ -45,6 +45,14 @@
 
 /* Banner media queries */
 
+/* 576px max (Bootstrap sm) */
+@media screen and (max-width: 576px) {
+	.banner-title {
+		line-height: 70px;
+		font-size: 70px
+	}
+}
+
 /* 1400px max (Bootstrap xxl) */
 @media screen and (max-width: 1200px) {
 	.navbar-brand {
