@@ -31,7 +31,7 @@ div #im1{
 }
 
 /* déscriptif panneaux/ombriere/borne */
-div #im2{
+div.im2{
 	width: 40vh;
 	min-height: 40vh;
 	display: flex;
