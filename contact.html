@@ -80,7 +80,7 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="companiesModalLabel text-center">Entreprise et Syndics</h5>
+										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="companiesModalLabel">Entreprises et syndics</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 									</div>
 									<div class="modal-body">
@@ -89,8 +89,8 @@
 											<!-- Encadré coordonnées -->
 											<legend>Coordonnées</legend>
 											<fieldset>
-												<label class="label-companies">
-													<span class="label-champs large">Nom de l'entité</span>
+												<label class="label-companies large">
+													<span class="label-champs">Nom de l'entité</span>
 													<input type="text" name="socialReason" id="socialReason">
 												</label>
 												<label class="label-lastName">
@@ -102,12 +102,12 @@
 													<input type="text" name="firstName" id="firstName1">
 												</label>
 												<label class="label-quality">
-													<span class="label-champs large">Qualité du responsable</span>
+													<span class="label-champs">Qualité du responsable</span>
 													<input type="text" name="quality" id="quality">
 												</label>
-												<label class="label-phoneNumber">
-													<span class="label-champs large">Numéro de téléphone</span>
-													<input type="number" name="phoneNumber" id="phoneNumber">
+												<label class="label-phoneNumber large">
+													<span class="label-champs">Numéro de téléphone</span>
+													<input type="text" name="phoneNumber" id="phoneNumber" class="nb">
 												</label>
 											</fieldset>
 
@@ -124,7 +124,7 @@
 												</label>
 												<label class="label-postalCode">
 													<span class="label-champs">Code postal</span>
-													<input type="number" name="postalCode" id="postalCode">
+													<input type="text" name="postalCode" id="postalCode" class="nb">
 												</label>
 												<label class="label-country">
 													<span class="label-champs">Ville</span>
@@ -140,13 +140,12 @@
 													<textarea type="text" name="project" id="project"></textarea>
 												</label>
 											</fieldset>
-										</form>
-								
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-cancel">Annuler</button>
-										<button type="submit" class="btn btn-submit">Envoyer</button>
-									</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn-cancel" data-bs-dismiss="modal">Annuler</button>
+											<button type="submit" class="btn-submit">Envoyer</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -164,17 +163,16 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="communitiesModalLabel text-center">Collectivité</h5>
+										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="communitiesModalLabel">Collectivités</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 									</div>
 									<div class="modal-body">
 										<form method="POST" action="index.html" class="communities">
-											
 											<!-- Encadré coordonnées -->
 											<legend>Coordonnées</legend>
 											<fieldset>
-												<label class="label-communities">
-													<span class="label-champs large">Collectivité</span>
+												<label class="label-communities large">
+													<span class="label-champs">Nom de la collectivité</span>
 													<input type="text" name="communities" id="communities">
 												</label>
 												<label class="label-lastName">
@@ -185,13 +183,13 @@
 													<span class="label-champs">Prénom du responsable</span>
 													<input type="text" name="firstName" id="firstName2">
 												</label>
-												<label class="label-quality">
-													<span class="label-champs large">Qualité du responsable</span>
+												<label class="label-quality large">
+													<span class="label-champs">Qualité du responsable</span>
 													<input type="text" name="quality" id="quality">
 												</label>
-												<label class="label-phoneNumber">
-													<span class="label-champs large">Numéro de téléphone</span>
-													<input type="number" name="phoneNumber" id="phoneNumber">
+												<label class="label-phoneNumber large">
+													<span class="label-champs">Numéro de téléphone</span>
+													<input type="text" name="phoneNumber" id="phoneNumber" class="nb">
 												</label>
 											</fieldset>
 
@@ -208,7 +206,7 @@
 												</label>
 												<label class="label-postalCode">
 													<span class="label-champs">Code postal</span>
-													<input type="number" name="postalCode" id="postalCode">
+													<input type="text" name="postalCode" id="postalCode" class="nb">
 												</label>
 												<label class="label-country">
 													<span class="label-champs">Ville</span>
@@ -224,13 +222,12 @@
 													<textarea type="text" name="project" id="project"></textarea>
 												</label>
 											</fieldset>
-										</form>
-								
-									</div>
-									<div class="modal-footer">
-											<button type="button" class="btn btn-cancel">Annuler</button>
-											<button type="submit" class="btn btn-submit">Envoyer</button>
-									</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn-cancel" data-bs-dismiss="modal">Annuler</button>
+											<button type="submit" class="btn-submit">Envoyer</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -248,7 +245,7 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="indivualsModalLabel text-center">Particulier</h5>
+										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="indivualsModalLabel">Particuliers</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 									</div>
 									<div class="modal-body">
@@ -267,7 +264,7 @@
 												</label>
 												<label class="label-phoneNumber">
 													<span class="label-champs large">Numéro de téléphone</span>
-													<input type="number" name="phoneNumber" id="phoneNumber">
+													<input type="text" name="phoneNumber" id="phoneNumber" class="nb">
 												</label>
 											</fieldset>
 
@@ -284,7 +281,7 @@
 												</label>
 												<label class="label-postalCode">
 													<span class="label-champs">Code postal</span>
-													<input type="number" name="postalCode" id="postalCode">
+													<input type="text" name="postalCode" id="postalCode" class="nb">
 												</label>
 												<label class="label-country">
 													<span class="label-champs">Ville</span>
@@ -300,13 +297,12 @@
 													<textarea type="text" name="project" id="project"></textarea>
 												</label>
 											</fieldset>
-										</form>
-								
-									</div>
-									<div class="modal-footer">
-											<button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Annuler</button>
-											<button type="submit" class="btn btn-submit">Envoyer</button>
-									</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn-cancel" data-bs-dismiss="modal">Annuler</button>
+											<button type="submit" class="btn-submit">Envoyer</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
@@ -666,6 +662,9 @@ Pour toute question, information sur les produits présentés sur le site, ou co
 				<div class="copyright col-12 col-md-6 text-center">Copyright &copy; 2021 Sunpower. Tous droits réservés.</div>
 			</div>
 		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/form.js"></script>
 	</body>
 
 </html>

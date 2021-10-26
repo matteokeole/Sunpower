@@ -1,14 +1,14 @@
 const Form = {
-	companies: document.querySelector("form.companies")/*,
+	companies: document.querySelector("form.companies"),
 	communities: document.querySelector("form.communities"),
-	individuals: document.querySelector("form.individuals")*/
+	individuals: document.querySelector("form.individuals")
 },
 setError = function(input, message) {
-	input.classList.add("error");
-	console.log(message)
+	input.parentNode.classList.add("error");
+	// console.log(message)
 },
 removeError = function(input) {
-	input.classList.remove("error")
+	input.parentNode.classList.remove("error")
 },
 handleForm = function(e) {
 	e.preventDefault();
@@ -30,8 +30,8 @@ handleForm = function(e) {
 
 // Form submission verification
 Form.companies.addEventListener("submit", handleForm);
-// Form.communities.addEventListener("submit", handleForm);
-// Form.individuals.addEventListener("submit", handleForm)
+Form.communities.addEventListener("submit", handleForm);
+Form.individuals.addEventListener("submit", handleForm)
 document.querySelectorAll("form input").forEach(function(input) {
 	input.addEventListener("keydown", function() {removeError(this)})
 })
