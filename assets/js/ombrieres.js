@@ -1,4 +1,4 @@
-//Fade-in-left
+// fadding left/right/top/opacité
 const ratio = .2
 const options = {
     root: null,

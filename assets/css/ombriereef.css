@@ -1,21 +1,24 @@
+/* container gauche */
 [class*="reveal1"] {
 	opacity : 0;
 	transform: translateX(-50px);
 }
+/* container droite */
 [class*="reveal2"] {
 	opacity : 0;
 	transform: translateX(50px);
 }
+/* container bottom*/
 [class*="reveal3"] {
 	opacity : 0;
 	transform: translateY(-50px);
 }
+/* parallaxe */
 [class*="reveal4"] {
 	opacity : 0;
 }
 
-
-
+/* affichage transition */
 .reveal-visible{
 	opacity : 1;
 	transform: translateX(0);
