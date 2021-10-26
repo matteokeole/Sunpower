@@ -78,9 +78,9 @@
 	/* Change image/text order for small screens */
 	.logoban1{
 		margin-top:150px;
-		color: #fff;
+		color: #fff !important;
 		width: 32vh !important;
-		margin-right: 0;
+		font-size: 16px !important;
 	}
 	.banner{
 		min-height: auto;
