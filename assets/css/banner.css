@@ -7,8 +7,11 @@
 
 .banner-content {
 	margin: 100px 0 auto 20px;
-	border-left: 5px solid var(--primary)
 }
+.banner-content-bordure{
+	border-left: 5px solid var(--primary);
+}
+
 
 /* Banner title */
 .banner-title {
@@ -59,6 +62,27 @@
 		opacity: 1 !important;
 	}
 	.banner {background: var(--primary)}
-	.banner-content {border-color: rgba(0, 0, 0, 0.2)}
+	.banner-content-bordure {border-color: rgba(0, 0, 0, 0.2)}
 	.banner-image {display: none}
+	.logoban{
+		display: none;
+	}
+	/* .logoban1{
+		margin-top:150px;
+		color: #fff;
+		width: 32vh !important;
+		margin-right: 0;
+	} */
+}
+@media screen and (max-width: 768px) {
+	/* Change image/text order for small screens */
+	.logoban1{
+		margin-top:150px;
+		color: #fff;
+		width: 32vh !important;
+		margin-right: 0;
+	}
+	.banner{
+		min-height: auto;
+	}
 }
