@@ -1,8 +1,13 @@
 /** Legal notices **/
 
+.modal {overflow: hidden}
+
+.modal-dialog, .modal-content {
+    height: 96%;
+}
+
 .modal-body {
-    height: 300px;
-    overflow-y:scroll
+    overflow-y: scroll
 }
 
 pre {
