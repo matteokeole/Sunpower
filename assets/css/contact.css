@@ -4,8 +4,9 @@
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	margin: auto 5px;
-
 }
+
+.modal-header .subtitle {margin: 0}
 
 /* forme image */
 .form-icon {
@@ -14,7 +15,6 @@
 	height: 150px;
 	border-radius: 50%;
 	margin-bottom: 20px;
-
 }
 
 /* image particulier */
@@ -40,72 +40,86 @@
 }
 
 label {
-	/*display: flex;*/
-	/*flex-direction: column;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-right: -4px;
+	padding: 10px
 }
 
 /* zones de texte */
 input {
-	width: 40%;
-	padding: 5px 0;
+	display: block;
+	width: 100%;
 	outline: none;
 	border: none;
 	border-bottom: 1px solid;
-	background-color: lime;
-	transition-duration: 1s
+	transition-duration: 0.2s
 }
 
-input, textarea{
-	border-color: var(--primary);
-	text-align: left!important;
-	margin: 0px 20px 20px 20px;
-}
-
-textarea{
-	padding: 0px 5px;
-	min-height: 200px;
-	resize : vertical;
-	margin-top: 15px;
-}
-
-label.large input {
-	display: block;
+textarea {
 	width: 100%;
-	background: saddlebrown;
+	min-height: 200px;
+	margin-top: 15px;
+	outline: none;
+	border: 1px solid;
+	border-radius: 7px;
+	resize: vertical
 }
+
+input, textarea {
+	padding: 5px 10px;
+	border-color: var(--primary)
+}
+
+label.large {width: 100%}
 
 /* Error input */
 label.error input {
 	border-color: var(--error);
-	color: var(--error);
+	color: var(--error)
 }
 
 label.error .label-champs {color: var(--error)}
 
+.error-message {
+	color: var(--error);
+	font-size: 12px;
+	transition-duration: 0.2s
+}
+
 /* libéllé des champs */
 .label-champs{
-	text-align: left!important;
-	margin:15px 20px 0px 20px;
+	display: block;
+	text-align: left !important;
 }
 
 /* encadré des champs */
-fieldset{
-	margin: 20px 0px 30px 0px;
-	padding-bottom: 20px;
-	border : 2px solid rgba(104, 99, 99, 0.123);
+fieldset {
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
 	border-radius: 8px;
+	text-align: left
 }
 
 /* Libellé de l'encadré */
-legend{
+legend {
+	text-align: left;
 	font-weight: bold;
-	font-size: 18px;
-	padding: 0px 15px 10px 15px;
-	text-align: left!important;
+	font-size: 18px
 }
 
 /* Modal */
 .modal-dialog{
 	max-width: 700px;
-	max-height: 700px;
+	max-height: 700px
+}
+
+.confirmation {
+	display: none;
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 7px;
+	background-color: var(--primary);
+	color: #fff
 }

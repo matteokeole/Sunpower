@@ -50,9 +50,16 @@
 	margin: 0 10px;
 	border: none;
 	border-radius: 7px;
-	background-color: transparent
+	background-color: transparent;
+	transition-duration: 0.2s
 }
 .btn-select-form:hover {background-color: #eee}
+.btn-select-form:active {
+	background-color: #ddd;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	transition-duration: 0.1s
+}
 
 /* Form buttons */
 .btn {

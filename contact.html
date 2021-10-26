@@ -80,7 +80,7 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="companiesModalLabel">Entreprises et syndics</h5>
+										<h5 class="modal-title link-dark fs-3 subtitle" id="companiesModalLabel">Entreprises et syndics</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 									</div>
 									<div class="modal-body">
@@ -92,50 +92,59 @@
 												<label class="label-companies large">
 													<span class="label-champs">Nom de l'entité</span>
 													<input type="text" name="socialReason" id="socialReason">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-lastName">
 													<span class="label-champs ">Nom du responsable</span>
 													<input type="text" name="lastName" id="lastName1">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-firstName">
 													<span class="label-champs">Prénom du responsable</span>
 													<input type="text" name="firstName" id="firstName1">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-quality">
 													<span class="label-champs">Qualité du responsable</span>
 													<input type="text" name="quality" id="quality">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-phoneNumber large">
 													<span class="label-champs">Numéro de téléphone</span>
 													<input type="text" name="phoneNumber" id="phoneNumber" class="nb">
+													<span class="error-message"></span>
 												</label>
 											</fieldset>
 
 											<!-- Encadré adresse -->
 											<legend>Adresse</legend>
 											<fieldset>
-												<label class="label-adress1">
-													<span class="label-champs large">Adresse (ligne 1)</span>
+												<label class="label-adress1 large">
+													<span class="label-champs">Adresse (ligne 1)</span>
 													<input type="text" name="adress1" id="adress1">
+													<span class="error-message"></span>
 												</label>
-												<label class="label-adress2">
-													<span class="label-champs large">Adresse (ligne 2)</span>
+												<label class="label-adress2 large">
+													<span class="label-champs">Adresse (ligne 2)</span>
 													<input type="text" name="adress2" id="adress2" class="optional">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-postalCode">
 													<span class="label-champs">Code postal</span>
 													<input type="text" name="postalCode" id="postalCode" class="nb">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-country">
 													<span class="label-champs">Ville</span>
 													<input type="text" name="country" id="country">
+													<span class="error-message"></span>
 												</label>
 											</fieldset>
 
 											<!-- Encadré projet -->
 											<legend>Projet</legend>
 											<fieldset>
-												<label class="label-project">
+												<label class="label-project large">
 													<span class="label-champs large">Description du projet</span>
 													<textarea type="text" name="project" id="project"></textarea>
 												</label>
@@ -163,7 +172,7 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="communitiesModalLabel">Collectivités</h5>
+										<h5 class="modal-title link-dark fs-3 subtitle" id="communitiesModalLabel">Collectivités</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 									</div>
 									<div class="modal-body">
@@ -174,51 +183,60 @@
 												<label class="label-communities large">
 													<span class="label-champs">Nom de la collectivité</span>
 													<input type="text" name="communities" id="communities">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-lastName">
 													<span class="label-champs ">Nom du responsable</span>
 													<input type="text" name="lastName" id="lastName2">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-firstName">
 													<span class="label-champs">Prénom du responsable</span>
 													<input type="text" name="firstName" id="firstName2">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-quality large">
 													<span class="label-champs">Qualité du responsable</span>
 													<input type="text" name="quality" id="quality">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-phoneNumber large">
 													<span class="label-champs">Numéro de téléphone</span>
 													<input type="text" name="phoneNumber" id="phoneNumber" class="nb">
+													<span class="error-message"></span>
 												</label>
 											</fieldset>
 
 											<!-- Encadré adresse -->
 											<legend>Adresse</legend>
 											<fieldset>
-												<label class="label-adress1">
-													<span class="label-champs large">Adresse (ligne 1)</span>
+												<label class="label-adress1 large">
+													<span class="label-champs">Adresse (ligne 1)</span>
 													<input type="text" name="adress1" id="adress1">
+													<span class="error-message"></span>
 												</label>
-												<label class="label-adress2">
-													<span class="label-champs large">Adresse (ligne 2)</span>
+												<label class="label-adress2 large">
+													<span class="label-champs">Adresse (ligne 2)</span>
 													<input type="text" name="adress2" id="adress2" class="optional">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-postalCode">
 													<span class="label-champs">Code postal</span>
 													<input type="text" name="postalCode" id="postalCode" class="nb">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-country">
 													<span class="label-champs">Ville</span>
 													<input type="text" name="country" id="country">
+													<span class="error-message"></span>
 												</label>
 											</fieldset>
 
 											<!-- Encadré projet -->
 											<legend>Projet</legend>
 											<fieldset>
-												<label class="label-project">
-													<span class="label-champs large">Description du projet</span>
+												<label class="label-project large">
+													<span class="label-champs">Description du projet</span>
 													<textarea type="text" name="project" id="project"></textarea>
 												</label>
 											</fieldset>
@@ -245,7 +263,7 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-header">
-										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="indivualsModalLabel">Particuliers</h5>
+										<h5 class="modal-title link-dark fs-3 subtitle" id="indivualsModalLabel">Particuliers</h5>
 										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
 									</div>
 									<div class="modal-body">
@@ -257,14 +275,17 @@
 												<label class="label-lastName">
 													<span class="label-champs ">Nom</span>
 													<input type="text" name="lastName" id="lastName3">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-firstName">
 													<span class="label-champs">Prénom</span>
 													<input type="text" name="firstName" id="firstName3">
+													<span class="error-message"></span>
 												</label>
-												<label class="label-phoneNumber">
-													<span class="label-champs large">Numéro de téléphone</span>
+												<label class="label-phoneNumber large">
+													<span class="label-champs">Numéro de téléphone</span>
 													<input type="text" name="phoneNumber" id="phoneNumber" class="nb">
+													<span class="error-message"></span>
 												</label>
 											</fieldset>
 
@@ -274,26 +295,30 @@
 												<label class="label-adress1">
 													<span class="label-champs large">Adresse (ligne 1)</span>
 													<input type="text" name="adress1" id="adress1">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-adress2">
 													<span class="label-champs large">Adresse (ligne 2)</span>
 													<input type="text" name="adress2" id="adress2" class="optional">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-postalCode">
 													<span class="label-champs">Code postal</span>
 													<input type="text" name="postalCode" id="postalCode" class="nb">
+													<span class="error-message"></span>
 												</label>
 												<label class="label-country">
 													<span class="label-champs">Ville</span>
 													<input type="text" name="country" id="country">
+													<span class="error-message"></span>
 												</label>
 											</fieldset>
 
 											<!-- Encadré projet -->
 											<legend>Projet</legend>
 											<fieldset>
-												<label class="label-project">
-													<span class="label-champs large">Description du projet</span>
+												<label class="label-project large">
+													<span class="label-champs">Description du projet</span>
 													<textarea type="text" name="project" id="project"></textarea>
 												</label>
 											</fieldset>
@@ -308,6 +333,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="confirmation">Votre demande a bien été envoyée.</div>
 		</main>
 
 		<!-- Footer -->
