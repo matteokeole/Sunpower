@@ -66,7 +66,6 @@
 		<main class="container text-center">
 			<h2 class="title">Nous contacter</h2>
 			<h3 class="subtitle">Vous êtes...</h3>
-			
 				<div class="row form-select-section">
 
 					<!-- section entreprise/syndicat -->
@@ -155,8 +154,6 @@
 
 					<!-- Section Collectivité -->
 					<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-						
-
 						<button class="btn-select-form btn-form-2 d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#coll">
 							<div class="form-icon collec"></div>
 							<div class="form-title marg">Une collectivité</div>
@@ -237,96 +234,84 @@
 								</div>
 							</div>
 						</div>
-
-
 					</div>
 
-			<!-- section particulier -->
-			<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
-				<button class="btn-select-form btn-form-2 d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#part">
-					<div class="form-icon part"></div>
-					<div class="form-title marg">Un particulier</div>
-				</button>
-				<div class="modal fade" id="part" tabindex="-1"
-					aria-labelledby="mentionLabel"
-					aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="individualsModalLabel text-center">Collectivité</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-							</div>
-							<div class="modal-body">
-								<form method="POST" action="index.html" class="individuals">
-									
-									<!-- Encadré coordonnées -->
-									<legend>Coordonnées</legend>
-									<fieldset>
-										<label class="label-individuals">
-											<span class="label-champs large">Nom de la collectivité</span>
-											<input type="text" name="individuals" id="individuals">
-										</label>
-										<label class="label-lastName">
-											<span class="label-champs ">Nom du responsable</span>
-											<input type="text" name="lastName" id="lastName3">
-										</label>
-										<label class="label-firstName">
-											<span class="label-champs">Prénom du responsable</span>
-											<input type="text" name="firstName" id="firstName3">
-										</label>
-										<label class="label-quality">
-											<span class="label-champs large">Qualité du responsable</span>
-											<input type="text" name="quality" id="quality">
-										</label>
-										<label class="label-phoneNumber">
-											<span class="label-champs large">Numéro de téléphone</span>
-											<input type="number" name="phoneNumber" id="phoneNumber">
-										</label>
-									</fieldset>
+					<!-- section particulier -->
+					<div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+						<button class="btn-select-form btn-form-3 d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#part">
+							<div class="form-icon parti"></div>
+							<div class="form-title marg">Un particulier</div>
+						</button>
+						<div class="modal fade" id="part" tabindex="-1"
+							aria-labelledby="mentionLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-tilte link-dark fs-1 fw-bold subtitle" id="indivualsModalLabel text-center">Particulier</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+									</div>
+									<div class="modal-body">
+										<form method="POST" action="index.html" class="individuals">
+											
+											<!-- Encadré coordonnées -->
+											<legend>Coordonnées</legend>
+											<fieldset>
+												<label class="label-lastName">
+													<span class="label-champs ">Nom</span>
+													<input type="text" name="lastName" id="lastName3">
+												</label>
+												<label class="label-firstName">
+													<span class="label-champs">Prénom</span>
+													<input type="text" name="firstName" id="firstName3">
+												</label>
+												<label class="label-phoneNumber">
+													<span class="label-champs large">Numéro de téléphone</span>
+													<input type="number" name="phoneNumber" id="phoneNumber">
+												</label>
+											</fieldset>
 
-									<!-- Encadré adresse -->
-									<legend>Adresse</legend>
-									<fieldset>
-										<label class="label-adress1">
-											<span class="label-champs large">Adresse (ligne 1)</span>
-											<input type="text" name="adress1" id="adress1">
-										</label>
-										<label class="label-adress2">
-											<span class="label-champs large">Adresse (ligne 2)</span>
-											<input type="text" name="adress2" id="adress2" class="optional">
-										</label>
-										<label class="label-postalCode">
-											<span class="label-champs">Code postal</span>
-											<input type="number" name="postalCode" id="postalCode">
-										</label>
-										<label class="label-country">
-											<span class="label-champs">Ville</span>
-											<input type="text" name="country" id="country">
-										</label>
-									</fieldset>
+											<!-- Encadré adresse -->
+											<legend>Adresse</legend>
+											<fieldset>
+												<label class="label-adress1">
+													<span class="label-champs large">Adresse (ligne 1)</span>
+													<input type="text" name="adress1" id="adress1">
+												</label>
+												<label class="label-adress2">
+													<span class="label-champs large">Adresse (ligne 2)</span>
+													<input type="text" name="adress2" id="adress2" class="optional">
+												</label>
+												<label class="label-postalCode">
+													<span class="label-champs">Code postal</span>
+													<input type="number" name="postalCode" id="postalCode">
+												</label>
+												<label class="label-country">
+													<span class="label-champs">Ville</span>
+													<input type="text" name="country" id="country">
+												</label>
+											</fieldset>
 
-									<!-- Encadré projet -->
-									<legend>Projet</legend>
-									<fieldset>
-										<label class="label-project">
-											<span class="label-champs large">Description du projet</span>
-											<textarea type="text" name="project" id="project"></textarea>
-										</label>
-									</fieldset>
-								</form>
-						
-							</div>
-							<div class="modal-footer">
-									<button type="button" class="btn btn-cancel">Annuler</button>
-									<button type="submit" class="btn btn-submit">Envoyer</button>
+											<!-- Encadré projet -->
+											<legend>Projet</legend>
+											<fieldset>
+												<label class="label-project">
+													<span class="label-champs large">Description du projet</span>
+													<textarea type="text" name="project" id="project"></textarea>
+												</label>
+											</fieldset>
+										</form>
+								
+									</div>
+									<div class="modal-footer">
+											<button type="button" class="btn btn-cancel">Annuler</button>
+											<button type="submit" class="btn btn-submit">Envoyer</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-
-			</div>
-
 		</main>
 
 		<!-- Footer -->
