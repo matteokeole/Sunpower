@@ -40,40 +40,47 @@
 }
 
 label {
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 }
 
 /* zones de texte */
-input{
-	border : none;
+input {
+	width: 40%;
+	padding: 5px 0;
+	outline: none;
+	border: none;
 	border-bottom: 1px solid;
-	height: 25px;
+	background-color: lime;
+	transition-duration: 1s
 }
 
 input, textarea{
 	border-color: var(--primary);
 	text-align: left!important;
-	padding: 0px 5px;
 	margin: 0px 20px 20px 20px;
 }
 
 textarea{
+	padding: 0px 5px;
 	min-height: 200px;
 	resize : vertical;
 	margin-top: 15px;
 }
-/* Fin zones de texte */
 
-/* .lastname{
-	width: 50%;
-} */
-
-/* champs si erreur de saisie */
-input.error{
-	border-color: var(--error);
-	font-size: 10px;
+label.large input {
+	display: block;
+	width: 100%;
+	background: saddlebrown;
 }
+
+/* Error input */
+label.error input {
+	border-color: var(--error);
+	color: var(--error);
+}
+
+label.error .label-champs {color: var(--error)}
 
 /* libéllé des champs */
 .label-champs{
