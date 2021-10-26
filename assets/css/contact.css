@@ -53,13 +53,21 @@ input{
 
 input, textarea{
 	border-color: var(--primary);
+	text-align: left!important;
+	padding: 0px 5px;
+	margin: 0px 20px;
 }
 
 textarea{
 	min-height: 200px;
 	resize : vertical;
+	margin-top: 15px;
 }
 /* Fin zones de texte */
+
+/* .lastname{
+	width: 50%;
+} */
 
 /* champs si erreur de saisie */
 input.error{
@@ -68,16 +76,14 @@ input.error{
 }
 
 /* libéllé des champs */
-.placeholder{
-	padding-top : 15px;
+.label-champs{
+	text-align: left!important;
+	margin:15px 20px 0px 20px;
 }
 
 /* encadré des champs */
 fieldset{
-	margin-top: 20px;
-	margin-bottom: 30px;
-	margin-left : 30px;
-	margin-right: 30px;
+	margin: 20px 0px 30px 0px;
 	padding-bottom: 20px;
 	border : 2px solid rgba(104, 99, 99, 0.123);
 	border-radius: 8px;
@@ -87,6 +93,12 @@ fieldset{
 legend{
 	font-weight: bold;
 	font-size: 18px;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 0px 15px 10px 15px;
+	text-align: left!important;
+}
+
+/* Modal */
+.modal-dialog{
+	max-width: 700px;
+	max-height: 700px;
 }
