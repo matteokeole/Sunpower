@@ -5,6 +5,9 @@
 @import url(header.css);
 @import url(banner.css);
 @import url(footer.css);
+@import url(texts.css);
+@import url(btn.css);
+@import url(mentions.css);
 
 /* Variables */
 :root {
@@ -24,108 +27,3 @@ body {
 	font-family: Poppins
 }
 
-/* Tests */
-
-.anchor {height: 56px}
-
-/* Leaflet map container */
-
-.map-section {margin-top: 10px}
-
-#map {
-	height: 500px;
-	margin-top: 30px;
-	border-radius: 10px;
-	z-index: 0
-}
-
-/* Titles */
-
-.title {
-	color: var(--secondary-variant);
-	font-family: "Tungsten Semibold";
-	font-size: 60px;
-	letter-spacing: 1px
-}
-
-/* Subtitles */
-.subtitle {
-	display: inline-block;
-	margin: 30px 0;
-	position: relative;
-	color: #444;
-	font-weight: 700;
-	z-index: 0
-}
-.subtitle::before {
-	content: "";
-	width: 80%;
-	height: 2px;
-	bottom: 0;
-	left: 10%;
-	position: absolute;
-	background-color: var(--primary);
-	z-index: -1
-}
-
-/* Paragraph links */
-p a, ul a {
-	color: var(--tertiary) !important;
-	font-weight: 700;
-	text-decoration: none;
-	transition-duration: 0.2s
-}
-p a:hover, ul a:hover {opacity: 0.75}
-
-/* Breadcrumbs */
-.breadcrumb {
-	display: inline-block;
-	margin: 66px 10px 0 10px;
-	padding: 5px 10px;
-	border-radius: 7px;
-	background-color: #eee;
-	text-align: left
-}
-
-.you-are-here {
-	opacity: 0.5;
-	font-size: 14px;
-	font-weight: 700
-}
-
-.breadcrumb-link {
-	display: block;
-	color: #757575
-}
-
-.breadcrumb-link a:not(:last-of-type) {color: #000 !important}
-
-/* Indicators and prev/next buttons */
-.carousel-control-prev, .carousel-control-next {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    z-index: 0
-}
-.carousel-control-prev:hover, .carousel-control-next:hover {background-color: rgba(255, 255, 255, 0.2)}
-
-/* image mtp */
-div #conf1{
-	background-image: url(../images/montpellier.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 60vh;
-	height: 25vh;
-}
-div #conf2{
-	background-image: url(../images/toulouse.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	width: 60vh;
-	height: 25vh;
-}
-
-@media screen and (max-width: 768px) {
-	#map{
-		height: 350px;
-	}
-}

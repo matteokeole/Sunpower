@@ -7,19 +7,6 @@
 
 }
 
-/* boutons entiers */
-.btn-form {
-	width: 200px;
-	height: 280px;
-	margin: 0 10px;
-	border: none;
-	border-radius: 7px;
-	background-color: transparent;
-}
-.btn-form:hover {
-	background-color: #eee;
-}
-
 /* forme image */
 .form-icon {
 	display: inline-block;
@@ -102,31 +89,4 @@ legend{
 	font-size: 18px;
 	padding-right: 10px;
 	padding-left: 10px;
-}
-
-/* Boutons */
-.btn{
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-top:10px;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
-	border-radius: 10px;
-	border: none;
-	background-color: white;
-	font-size: 15px;
-}
-
-/* Bouton valider */
-.btn-submit{
-	background-color: var(--primary);
-	color: white;
-	font-weight: bold;
-}
-
-/* Bouton annuler */
-.btn-cancel{
-	background-position: center;
-	background-color: none;
-	font-weight: bold;
 }

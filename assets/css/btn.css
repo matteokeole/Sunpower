@@ -1,0 +1,82 @@
+/** Buttons **/
+
+/* Carousel prev/next buttons */
+.carousel-control-prev, .carousel-control-next {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	z-index: 0
+}
+.carousel-control-prev:hover, .carousel-control-next:hover {background-color: rgba(255, 255, 255, 0.2)}
+
+/* Banner buttons */
+
+.banner-link {
+	height: 50px;
+	line-height: 50px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	border-radius: 7px;
+	background-color: var(--secondary);
+	color: #fff !important; /* Override Bootstrap default color */
+	text-decoration: none;
+	transition-duration: 0.2s
+}
+.banner-link:hover {opacity: 0.75}
+.banner-link:active {
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+	transition-duration: 0.1s
+}
+
+.banner-link ion-icon {
+	margin-left: 8px;
+	font-size: 24px
+}
+.banner-link:first-of-type:hover ion-icon {
+	-webkit-transform: rotateZ(180deg);
+	transform: rotateZ(180deg);
+	transition-duration: 0.5s
+}
+.banner-link:last-of-type:hover ion-icon {
+	-webkit-animation: shake 0.1s;
+	animation: shake 0.1s;
+	transition-duration: 0.5s
+}
+
+/* Form selection buttons */
+.btn-select-form {
+	width: 200px;
+	height: 280px;
+	margin: 0 10px;
+	border: none;
+	border-radius: 7px;
+	background-color: transparent
+}
+.btn-select-form:hover {background-color: #eee}
+
+/* Form buttons */
+.btn {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: white;
+	font-size: 15px;
+}
+
+/* Form submit button */
+.btn-submit {
+	background-color: var(--primary);
+	color: white;
+	font-weight: bold;
+}
+
+/* Form cancel button */
+.btn-cancel {
+	background-position: center;
+	background-color: none;
+	font-weight: bold;
+}

@@ -1,0 +1,65 @@
+/** Text styles **/
+
+/* Presentation anchor */
+.anchor {height: 56px}
+
+/* Titles */
+.title {
+	color: var(--secondary-variant);
+	font-family: "Tungsten Semibold";
+	font-size: 60px;
+	letter-spacing: 1px
+}
+
+/* Subtitles */
+.subtitle {
+	display: inline-block;
+	margin: 30px 0;
+	position: relative;
+	color: #444;
+	font-weight: 700;
+	z-index: 0
+}
+.subtitle::before {
+	content: "";
+	width: 80%;
+	height: 2px;
+	bottom: 0;
+	left: 10%;
+	position: absolute;
+	background-color: var(--primary);
+	z-index: -1
+}
+
+/* Paragraph links */
+p a, ul a {
+	color: var(--tertiary) !important;
+	font-weight: 700;
+	text-decoration: none;
+	transition-duration: 0.2s
+}
+p a:hover, ul a:hover {opacity: 0.75}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+	display: inline-block;
+	margin: 66px 10px 0 10px;
+	padding: 5px 10px;
+	border-radius: 7px;
+	background-color: #eee;
+	text-align: left
+}
+
+.you-are-here {
+	opacity: 0.5;
+	font-size: 14px;
+	font-weight: 700
+}
+
+.breadcrumb-link {
+	display: block;
+	color: #757575
+}
+
+.breadcrumb-link a:not(:last-of-type) {color: #000 !important}

@@ -1,0 +1,17 @@
+/** Leaflet map container **/
+
+.map-section {margin-top: 10px}
+
+#map {
+	height: 500px;
+	margin-top: 30px;
+	border-radius: 10px;
+	z-index: 0
+}
+
+/* Map media queries */
+
+/* 768px max (Bootstrap md) */
+@media screen and (max-width: 768px) {
+	#map {height: 350px}
+}
