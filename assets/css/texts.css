@@ -32,13 +32,13 @@
 }
 
 /* Paragraph links */
-p a, ul a {
+p a, ul a, pre a {
 	color: var(--tertiary) !important;
 	font-weight: 700;
 	text-decoration: none;
 	transition-duration: 0.2s
 }
-p a:hover, ul a:hover {opacity: 0.75}
+p a:hover, ul a:hover, pre a:hover {opacity: 0.75}
 
 /* Breadcrumbs */
 
