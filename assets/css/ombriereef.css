@@ -1,0 +1,24 @@
+[class*="reveal1"] {
+	opacity : 0;
+	transform: translateX(-50px);
+}
+[class*="reveal2"] {
+	opacity : 0;
+	transform: translateX(50px);
+}
+[class*="reveal3"] {
+	opacity : 0;
+	transform: translateY(-50px);
+}
+[class*="reveal4"] {
+	opacity : 0;
+}
+
+
+
+.reveal-visible{
+	opacity : 1;
+	transform: translateX(0);
+	transition: 1.8s;
+}
+
