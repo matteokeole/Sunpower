@@ -26,3 +26,21 @@ body {
 	margin: 0;
 	font-family: Poppins
 }
+div.logoban{
+	margin-left:0;
+	margin-top: 15vh;
+	width: 39vh;
+	height: 15vh;
+	background-image: url(../../favicon.ico);
+	background-size: cover;
+}
+
+.logoban1{
+	margin-top: 30px;
+	color : var(--secondary-variant);
+	line-height: 40px;
+	font-style: poppins;
+	font-weight: bolder;
+	font-size: 25px;
+	width: 65vh;
+}
