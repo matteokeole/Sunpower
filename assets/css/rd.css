@@ -22,7 +22,7 @@
 #img5 {background-image: url(../images/particulier.jpeg)}
 
 /* Descriptions */
-div #im {
+.im {
 	display: flex;
 	justify-content: center;
 	width: 50vh;
