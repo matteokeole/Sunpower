@@ -2,6 +2,6 @@
     height: 300px;
     overflow-y:scroll;
 }
-
 pre{
+    white-space: break-space;
 }
