@@ -47,6 +47,9 @@
 
 /* 1400px max (Bootstrap xxl) */
 @media screen and (max-width: 1200px) {
+	.navbar-brand {
+		opacity: 1 !important;
+	}
 	.banner {background: var(--primary)}
 	.banner-content {border-color: rgba(0, 0, 0, 0.2)}
 	.banner-image {display: none}
