@@ -2,9 +2,7 @@
 
 .modal {overflow: hidden}
 
-.modal-dialog, .modal-content {
-    height: 96%;
-}
+.modal-dialog, .modal-content {height: 96%}
 
 .modal-body {
     overflow-y: scroll
@@ -14,13 +12,13 @@ pre {
     width: 100%;
     white-space: pre-wrap;
     text-align: justify;
-    font-family: Poppins;
+    font-family: Poppins
 }
 
 .sousTitreMentions, .articleMentions {font-weight: bold;}
 
-.articleMentions {font-size: 22px;}
+.articleMentions {font-size: 22px}
 
-.sousTitreMentions {font-size: 18px;}
+.sousTitreMentions {font-size: 18px}
 
 .mentions-logo {width: 100px}
