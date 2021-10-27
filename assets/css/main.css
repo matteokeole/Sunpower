@@ -19,37 +19,18 @@
 }
 
 /* Text selection color */
-::selection {background-color: rgba(0, 0, 0, 0.1)}
 ::-moz-selection {background-color: rgba(0, 0, 0, 0.1)}
+::selection {background-color: rgba(0, 0, 0, 0.1)}
+
+html, body {overflow-x: hidden}
 
 body {
 	margin: 0;
 	font-family: Poppins
 }
-div.logoban{
-	margin-left:0;
-	margin-top: 15vh;
-	width: 39vh;
-	height: 15vh;
-	background-image: url(../../favicon.ico);
-	background-size: cover;
-}
 
-.logoban1{
-	margin-top: 30px;
-	color : var(--secondary-variant);
-	line-height: 40px;
-	font-weight: bolder;
-	font-size: 23px;
-	width: 65vh;
-}
+/* Presentation */
+.present {padding: 0}
 
-/* main presentation */
-.present{
-	padding: 0;
-}
-
-/* caroussel */
-.carou{
-	margin-top:20px;
-}
+/* Carousel */
+.carou {margin-top: 20px}
