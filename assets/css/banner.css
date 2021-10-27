@@ -27,11 +27,19 @@
 
 /* Ion-icon shake animation */
 @keyframes shake {
-	0%, 100% {
+	0%,100% {
 		-webkit-transform: translateX(3px);
 		transform: translateX(3px)
 	}
+	25% {
+		-webkit-transform: translateX(-3px);
+		transform: translateX(-3px)
+	}
 	50% {
+		-webkit-transform: translateX(3px);
+		transform: translateX(3px)
+	}
+	75% {
 		-webkit-transform: translateX(-3px);
 		transform: translateX(-3px)
 	}
