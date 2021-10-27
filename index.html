@@ -42,7 +42,7 @@
 
 	<body>
 		<!-- Header -->
-		<header class="navbar navbar-expand-lg">
+		<header class="navbar navbar-expand-lg" role="banner">
 			<!-- Brand name -->
 			<a href="index.html" class="navbar-brand">Logo</a>
 			<!-- Dropdown menu toggler -->
@@ -55,7 +55,7 @@
 			<ion-icon name="menu-outline"></ion-icon>
 		</button>
 		<!-- Navbar -->
-		<nav id="dropdown" class="navbar-collapse collapse">
+		<nav id="dropdown" class="navbar-collapse collapse" role="navigation" aria-label="menu-de-navigation">
 			<a href="index.html#" class="nav-link home">Accueil</a>
 			<a href="index.html#presentation-anchor" class="nav-link presentation">Présentation</a>
 			<a href="ombrieres.html" class="nav-link">Ombrières solaires</a>
@@ -89,13 +89,13 @@
 			</div>
 			<div class="container logoban">
 			</div>
-			<p class="logoban1">Votre spécialiste des <u>ombrières solaires</u> <br> nouvelle génération les plus performantes du marché</p>
+			<p class="logoban1" id="Sunpower_descriptif">Votre spécialiste des <u>ombrières solaires</u> <br> nouvelle génération les plus performantes du marché</p>
 		</div>
 		<div class="banner-image"></div>
 	</div>
 	
 	<!-- Content -->
-	<main class="container-fluid text-center present">
+	<main class="container-fluid text-center present" role="main">
 		<!-- Presentation -->
 		<div id="presentation-anchor" class="anchor"></div>
 		<div class="presentation-section">
@@ -106,7 +106,7 @@
 				<div class="row">
 					<div class="col-1 col-md-2"></div>
 					<div class="col-10 col-md-8 text-justify">
-						<p>
+						<p id="qui_sommes_nous">
 							Depuis sa fondation en 2013, la société Sunpower conçoit et commercialise des panneaux solaires à haut rendement.<br><br>
 								Dans le cadre de nos activités, nous avons développé des ombrières solaires pour la recharge des véhicules électriques. Ce projet est issu du démonstrateur Zen-E-DRIVE financé par l'ADEME.<br>
 								<a href="https://librairie.ademe.fr/mobilite-et-transport/2579-realisation-d-une-plateforme-de-demonstration-pour-le-developpement-d-un-systeme-integre-vehicule-infrastructures-avec-une-gestion-optimale-de-la-gestion-de-l-energie.html" title="En savoir plus sur le Zen-E-DRIVE" aria-label="En savoir plus sur le Zen-E-DRIVE">En savoir plus</a>
@@ -119,7 +119,7 @@
 			<!-- Map -->
 			<div class="map-section">
 				<h3 class="subtitle">Où trouver nos installations ?</h3>
-				<p>Nos ombrières sont équipées chacune de 6 bornes de chargement.</p>
+				<p id="nos_ombrieres">Nos ombrières sont équipées chacune de 6 bornes de chargement.</p>
 			</div>
 		</div>
 
@@ -131,7 +131,7 @@
 				<div class="row">
 					<div class="col-1 col-md-2"></div>
 					<div class="col-10 col-md-8 text-justify">
-						<p>
+						<p id="aides">
 							Nous avons bénéficié d'une aide de 2M d'euros auprès de <a href="https://www.bpifrance.fr/">BPIFrance</a>.<br>
 							En outre, nous avons réalisé une levée de fonds de 30M d'euros auprès d'un fond d'investissement privé.
 						</p>
@@ -146,7 +146,7 @@
 				<div class="row">
 					<div class="col-1 col-md-2"></div>
 					<div class="col-10 col-md-8 text-justify">
-						<p>
+						<p id="collaborateurs">
 							Depuis 2015, nous collaborons avec l'<a href="https://www.ines-solaire.org/en/">INES</a> pour la conception de panneaux solaires et avec le <a href="https://www.cea.fr/">CEA</a> pour la mise au point d'un accumulateur à haute densité d'énergie. Montpellier est dotée de 4 ombrières solaires avec 6 bornes de chargement chacunes et l'agglomération de Toulouse a engagé des démarches pour profiter de nos technologies.
 						</p>
 					</div>
@@ -182,7 +182,7 @@
 		</main>
 			
 		<!-- Footer -->
-		<footer class="container-fluid">
+		<footer class="container-fluid" role="contentinfo">
 			<div class="footer-container row">
 				<div class="col col-12 col-sm-6 col-xl-3 d-flex">
 					<div class="footer-logo"></div>
