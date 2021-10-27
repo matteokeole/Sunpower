@@ -42,12 +42,12 @@ handleForm = function(e) {
 		else if (inputs[i].name === "postalCode" && inputs[i].value.length !== 5) setError(inputs[i], errorMessages.invalidPostal);
 		else verifiedInputs++
 	}
-	/*if (verifiedInputs === inputs.length) {
+	if (verifiedInputs === inputs.length) {
 		// Form submission confirmation
 		e.target.parentNode.parentNode.querySelector(".modal-header .btn-close").click(); // Hide form modal
 		document.querySelector(".confirmation").style.display = "block"; // Show confirmation message
 		setTimeout(function() {window.scrollTo(0, 0)}, 200) // Scroll to the top of the page
-	}*/
+	}
 };
 
 // Form submission verification
