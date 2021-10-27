@@ -83,7 +83,6 @@
 	/* Change image/text order for small screens */
 	.logoban1 {
 		width: 32vh !important;
-		margin-top: 150px;
 		color: #fff !important;
 		font-size: 16px !important
 	}
