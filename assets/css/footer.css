@@ -23,7 +23,7 @@ footer .col:last-child {border: none}
 /* First section logo */
 
 .footer-logo {
-	background: url(../../favicon3.png) center no-repeat;
+	background: url(../../favicon3.ico) center no-repeat;
 	width: 75px;
 	height: 75px;
 	margin: 0 20px 0 8px;

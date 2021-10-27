@@ -38,7 +38,7 @@
 	transition-duration: 0.5s
 }
 .banner-link:last-of-type:hover ion-icon {
-	-webkit-animation: shake 0.1s;
+	-webkit-animation: shake 0.2s;
 	animation: shake 0.2s;
 	transition-duration: 0.5s
 }
