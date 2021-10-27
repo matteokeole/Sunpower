@@ -61,7 +61,8 @@ nav {
 	background-color: var(--secondary);
 	color: #fff !important; /* Override Bootstrap default color */
 	font-size: 25px;
-	transition-duration: 0.2s
+	transition-duration: 0.2s;
+	z-index: 1;
 }
 .contact-link:hover, .contact-link-rounded:hover {
 	-webkit-transform: scale(1.1);
