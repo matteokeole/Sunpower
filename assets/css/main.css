@@ -43,3 +43,13 @@ div.logoban{
 	font-size: 23px;
 	width: 65vh;
 }
+
+/* main presentation */
+.present{
+	padding: 0;
+}
+
+/* caroussel */
+.carou{
+	margin-top:20px;
+}
