@@ -13,11 +13,11 @@
 	background: center no-repeat;
 	background-size: cover
 }
-.img#img1 {background-image: url(../images/electroniquePuissance.png)}
-.img#img2 {background-image: url(../images/electroniqueEmbarquee.jpeg)}
-.img#img3 {background-image: url(../images/BMS.png)}
-.img#img4 {background-image: url(../images/collectivite.jpeg)}
-.img#img5 {background-image: url(../images/particulier.jpeg)}
+.img#img1 {background-image: url(../images/rd1.png)}
+.img#img2 {background-image: url(../images/rd2.jpg)}
+.img#img3 {background-image: url(../images/rd3.png)}
+.img#img4 {background-image: url(../images/rd4.jpg)}
+.img#img5 {background-image: url(../images/rd5.jpg)}
 
 /* Descriptions */
 .im {

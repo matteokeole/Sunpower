@@ -20,9 +20,9 @@
 	border-radius: 50%;
 	background-size: cover
 }
-.form-icon.entre {background-image: url(../images/chef-dentreprise.png)} /* Companies icon */
-.form-icon.collec {background-image: url(../images/collectivite.png)} /* Communities icon */
-.form-icon.parti {background-image: url(../images/particulier.png)} /* Individuals icon */
+.form-icon.entre {background-image: url(../images/iconCompanies.png)} /* Companies icon */
+.form-icon.collec {background-image: url(../images/iconCommunities.png)} /* Communities icon */
+.form-icon.parti {background-image: url(../images/iconIndividuals.png)} /* Individuals icon */
 
 /* Form selection button title */
 .form-title {color: #000}
