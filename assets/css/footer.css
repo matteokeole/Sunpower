@@ -21,12 +21,15 @@ footer .col {
 footer .col:last-child {border: none}
 
 /* First section logo */
+
 .footer-logo {
+	background: url(../../favicon3.png) center no-repeat;
 	width: 75px;
 	height: 75px;
 	margin: 0 20px 0 8px;
 	border-radius: 50%;
-	background-color: var(--secondary-variant)
+	/* background-color: var(--secondary-variant) */
+	background-size: 100%;
 }
 
 /* Subtitles */
