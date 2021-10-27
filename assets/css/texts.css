@@ -62,4 +62,4 @@ p a:hover, ul a:hover, pre a:hover {opacity: 0.75}
 	color: #757575
 }
 
-.breadcrumb-link a:not(:last-of-type) {color: #000 !important}
+.breadcrumb-link a:not(:last-of-type) {color: #000 !important /* Override link default color */}

@@ -4,18 +4,16 @@
 
 .modal-dialog, .modal-content {height: 96%}
 
-.modal-body {
-    overflow-y: scroll
-}
+.modal-body {overflow-y: scroll}
 
 pre {
-    width: 100%;
-    white-space: pre-wrap;
-    text-align: justify;
-    font-family: Poppins
+	width: 100%;
+	text-align: justify;
+	white-space: pre-wrap;
+	font-family: Poppins
 }
 
-.sousTitreMentions, .articleMentions {font-weight: bold;}
+.sousTitreMentions, .articleMentions {font-weight: 700}
 
 .articleMentions {font-size: 22px}
 

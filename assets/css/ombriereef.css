@@ -1,27 +1,33 @@
-/* container gauche */
+/* Solar shades effects */
+
+/* Left container */
 .reveal1 {
-    opacity : 0;
-	transform: translateX(-50px);
-}
-/* container droite */
-.reveal2 {
-    opacity : 0;
-	transform: translateX(50px);
-}
-/* container bottom*/
-.reveal3 {
-	opacity : 0;
-	transform: translateY(-50px);
-}
-/* parallaxe */
-.reveal4 {
-    opacity : 0;
+	opacity: 0;
+	-webkit-transform: translateX(-50px);
+	transform: translateX(-50px)
 }
 
-/* affichage transition */
-.reveal-visible{
-    opacity : 1;
-	transform: translateX(0);
-	transition: 1.8s;
+/* Right container */
+.reveal2 {
+	opacity: 0;
+	-webkit-transform: translateX(50px);
+	transform: translateX(50px)
 }
-html, body {overflow-x: hidden}
+
+/* Bottom container */
+.reveal3 {
+	opacity: 0;
+	-webkit-ransform: translateY(-50px);
+	transform: translateY(-50px)
+}
+
+/* Parallax on the large image */
+.reveal4 {opacity: 0}
+
+/* Transition on visible elements */
+.reveal-visible {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	transition-duration: 1.8s
+}

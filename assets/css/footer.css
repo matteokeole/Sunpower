@@ -10,7 +10,7 @@ footer {
 
 .footer-container {padding-top: 20px}
 
-/* Sections */
+/* Footer sections */
 footer .col {
 	padding-bottom: 20px;
 	border-width: 0;
@@ -21,15 +21,22 @@ footer .col {
 footer .col:last-child {border: none}
 
 /* First section logo */
-
 .footer-logo {
-	background: url(../../favicon3.ico) center no-repeat;
 	width: 75px;
 	height: 75px;
 	margin: 0 20px 0 8px;
 	border-radius: 50%;
-	/* background-color: var(--secondary-variant) */
-	background-size: 100%;
+	background: url(../../favicon3.ico) center no-repeat;
+	background-size: 80%;
+	cursor: pointer;
+	transition-duration: 0.3s
+}
+.footer-logo:hover {background-color: #fff}
+.footer-logo:active {
+	background-color: #fff;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	transition-duration: 0.1s
 }
 
 /* Subtitles */

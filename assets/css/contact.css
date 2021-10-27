@@ -1,46 +1,33 @@
-/* border des sections */
+/** Contact page and forms **/
+
+/* Form selection section */
+
 .form-select-section {
+	margin: auto 5px;
 	padding: 50px;
 	border: 1px solid #ccc;
-	border-radius: 10px;
-	margin: auto 5px;
+	border-radius: 10px
 }
 
 .modal-header .subtitle {margin: 0}
 
-/* forme image */
+/* Form selection button icon */
 .form-icon {
 	display: inline-block;
 	width: 150px;
 	height: 150px;
+	margin: 20px 0;
 	border-radius: 50%;
-	margin-bottom: 20px;
+	background-size: cover
 }
+.form-icon.entre {background-image: url(../images/chef-dentreprise.png)} /* Companies icon */
+.form-icon.collec {background-image: url(../images/collectivite.png)} /* Communities icon */
+.form-icon.parti {background-image: url(../images/particulier.png)} /* Individuals icon */
 
+/* Form selection button title */
 .form-title {color: #000}
 
-/* image particulier */
-.parti{
-	background-image: url(../images/particulier.png);
-	background-size: cover;
-}
-
-/* image collectivité */
-.collec{
-	background-image: url(../images/collectivite.png);
-	background-size: cover;
-}
-
-/* image entreprise */
-.entre{
-	background-image: url(../images/chef-dentreprise.png);
-	background-size: cover;
-}
-
-.form-icon{
-	margin-top: 20px;
-}
-
+/* Input labels */
 label {
 	display: inline-block;
 	vertical-align: top;
@@ -48,34 +35,16 @@ label {
 	margin-right: -4px;
 	padding: 10px
 }
-
-/* zones de texte */
-input {
-	display: block;
-	width: 100%;
-	outline: none;
-	border: none;
-	border-bottom: 1px solid;
-	border-radius: 0;
-	transition-duration: 0.2s
-}
-
-textarea {
-	width: 100%;
-	min-height: 200px;
-	margin-top: 15px;
-	outline: none;
-	border: 1px solid;
-	border-radius: 7px;
-	resize: vertical
-}
-
-input, textarea {
-	padding: 5px 10px;
-	border-color: var(--primary)
-}
-
 label.large {width: 100%}
+
+/* Label title */
+.label-champs {
+	display: block;
+	text-align: left !important
+}
+label.error .label-champs {color: var(--error)}
+
+/* Text fields */
 
 /* Error input */
 label.error input {
@@ -83,18 +52,35 @@ label.error input {
 	color: var(--error)
 }
 
-label.error .label-champs {color: var(--error)}
+input, textarea {
+	width: 100%;
+	padding: 5px 10px;
+	outline: none;
+	border-width: 0;
+	border-style: solid;
+	border-color: var(--primary)
+}
 
+input {
+	display: block;
+	border-bottom-width: 1px;
+	border-radius: 0;
+	transition-duration: 0.2s
+}
+
+textarea {
+	min-height: 200px;
+	margin-top: 15px;
+	border-width: 1px;
+	border-radius: 7px;
+	resize: vertical
+}
+
+/* Label error message */
 .error-message {
 	color: var(--error);
 	font-size: 12px;
 	transition-duration: 0.2s
-}
-
-/* libéllé des champs */
-.label-champs{
-	display: block;
-	text-align: left !important;
 }
 
 /* encadré des champs */
@@ -108,16 +94,17 @@ fieldset {
 /* Libellé de l'encadré */
 legend {
 	text-align: left;
-	font-weight: bold;
-	font-size: 18px
+	font-size: 18px;
+	font-weight: bold
 }
 
-/* Modal */
-.modal-dialog{
+/* Form modal */
+.modal-dialog {
 	max-width: 700px;
 	max-height: 700px
 }
 
+/* Form submit confirmation */
 .confirmation {
 	display: none;
 	margin-bottom: 30px;

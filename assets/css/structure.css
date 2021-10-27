@@ -1,84 +1,71 @@
 /** Page structure with vertical line **/
 
-/* rangés */
-div.rang{
-	margin-top: 190px;
-}
+/* Rows */
+div.rang {margin-top: 190px}
 
-/* séparateurs */
-.sepa{
-	border-left: solid #A4BD01;
+/* Vertical lines */
+.sepa {
 	border-width: 3px;
-	border-radius: 30%;
+	border-left: solid var(--primary);
+	border-radius: 30%
 }
 
-/* images */
+/* Images */
 
-div.boxim1{
-	align-items: flex-end;
-}
+div.boxim1 {align-items: flex-end}
 
-/* image panneaux */
-div #im1{
-	border-radius: 10px;
-	background-image: url(../images/test.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+/* Solar panels image */
+div #im1 {
+	order: 0;
 	width: 60vh;
 	height: 35vh;
 	margin-bottom: 30px;
-	order: 0;
+	border-radius: 10px;
+	background: url(../images/test.jpg) no-repeat;
+	background-size: cover
 }
 
-/* déscriptif panneaux/ombriere/borne */
-div.im2{
-	width: 40vh;
-	min-height: 40vh;
+/* Descriptions */
+div.im2 {
 	display: flex;
 	justify-content: center;
+	width: 40vh;
+	min-height: 40vh
 }
 
-/* image ombriere */
-div #im3{
-	border-radius: 10px;
-	background:url(../images/test2.jpg) center no-repeat;
-	background-size: cover;
+/* Solar shades image */
+div #im3 {
+	order: 0;
 	width: 60vh;
 	height: 35vh;
 	margin-bottom: 30px;
-	order: 0;
+	border-radius: 10px;
+	background: url(../images/test2.jpg) center no-repeat;
+	background-size: cover
 }
 
-
-/* image borne */
-div #im4{
+/* Charging stations image */
+div #im4 {
+	order: 0;
+	width: 60vh;
+	height: 35vh;
+	margin-bottom: 30px;
 	border-radius: 10px;
 	background: url(../images/test3.jpg) no-repeat;
-	background-size: cover;
-	width: 60vh;
-	height: 35vh;
-	margin-bottom: 30px;
-	order: 0;
+	background-size: cover
 }
 
+/* Subtitles */
+h3 {padding: 0 !important}
 
-/* sous titres */
-h3{
-	padding: 0 !important;
-}
+/* Resume container */
+.resume {margin-top: 220px}
 
-/* resume container */
-.resume{
-	margin-top: 220px;
-}
+/* Descriptions */
+p {text-align: center}
 
-
-/* descriptions */
-p{
-	text-align: center;
-}
-/* descriptions 1/2/4 elem*/
-p.elem{
+/* Description 1/2/4 elem */
+p.elem {
 	margin-top: 50px;
 	text-align: justify
 }

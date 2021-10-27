@@ -5,12 +5,8 @@
 	background: linear-gradient(70deg, #fff 50%, var(--primary) 0)
 }
 
-.banner-content {
-	margin: 100px 0 auto 20px;
-}
-.banner-content-bordure{
-	border-left: 5px solid var(--primary);
-}
+.banner-content {margin: 100px 0 auto 20px}
+.banner-content-bordure {border-left: 5px solid var(--primary)}
 
 
 /* Banner title */
@@ -26,32 +22,43 @@
 .banner-desc {margin-left: 20px}
 
 /* Ion-icon shake animation */
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(3px)}
+	25% {-webkit-transform: translateX(-3px)}
+	50% {-webkit-transform: translateX(3px)}
+	75% {-webkit-transform: translateX(-3px)}
+}
 @keyframes shake {
-	0%,100% {
-		-webkit-transform: translateX(3px);
-		transform: translateX(3px)
-	}
-	25% {
-		-webkit-transform: translateX(-3px);
-		transform: translateX(-3px)
-	}
-	50% {
-		-webkit-transform: translateX(3px);
-		transform: translateX(3px)
-	}
-	75% {
-		-webkit-transform: translateX(-3px);
-		transform: translateX(-3px)
-	}
+	0%, 100% {transform: translateX(3px)}
+	25% {transform: translateX(-3px)}
+	50% {transform: translateX(3px)}
+	75% {transform: translateX(-3px)}
 }
 
-/* Banner image */
+/* Banner images */
 
 .banner-image {
 	flex-grow: 1;
 	margin: 100px 50px;
 	background: url(../images/banner.png) center no-repeat;
 	background-size: contain
+}
+
+.logoban {
+	width: 39vh;
+	height: 15vh;
+	margin: 15vh 0 0 0;
+	background-image: url(../../favicon.ico);
+	background-size: cover
+}
+
+.logoban1 {
+	width: 65vh;
+	line-height: 40px;
+	margin-top: 30px;
+	color: var(--secondary-variant);
+	font-size: 23px;
+	font-weight: 700
 }
 
 /* Banner media queries */
@@ -66,31 +73,19 @@
 
 /* 1400px max (Bootstrap xxl) */
 @media screen and (max-width: 1200px) {
-	.navbar-brand {
-		opacity: 1 !important;
-	}
+	.navbar-brand {opacity: 1 !important /* Override the JS scroll animation */}
 	.banner {background: var(--primary)}
 	.banner-content-bordure {border-color: rgba(0, 0, 0, 0.2)}
 	.banner-image {display: none}
-	.logoban{
-		display: none;
-	}
-	/* .logoban1{
-		margin-top:150px;
-		color: #fff;
-		width: 32vh !important;
-		margin-right: 0;
-	} */
+	.logoban {display: none}
 }
 @media screen and (max-width: 768px) {
 	/* Change image/text order for small screens */
-	.logoban1{
-		margin-top:150px;
-		color: #fff !important;
+	.logoban1 {
 		width: 32vh !important;
-		font-size: 16px !important;
+		margin-top: 150px;
+		color: #fff !important;
+		font-size: 16px !important
 	}
-	.banner{
-		min-height: auto;
-	}
+	.banner {min-height: auto}
 }
